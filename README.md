@@ -14,7 +14,7 @@ No installation needed. Just fork the repo, install dev dependencies, and get ru
 
 ## Usage example
 
-Coming soon.<sup>[1](#myfootnote1)</sup>
+Coming soon. WIP.
 
 ## Development setup
 
@@ -55,5 +55,4 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [https://github.com/twhite96/checkyoself](https://github.com/twhite96/checkyoself)
 
-<a name="myfootnote1">1</a>: Still working on it.
 
