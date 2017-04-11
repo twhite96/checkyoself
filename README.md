@@ -14,9 +14,9 @@ No installation needed. Just fork the repo, install dev dependencies, and get ru
 
 ## Usage example
 
-Coming soon.[^1]
+Coming soon.<sup>[1](#myfootnote1)</sup>
 
-[^1]: Still working on it.
+<a name="myfootnote1">1</a>: Still working on it.
 
 ## Development setup
 
