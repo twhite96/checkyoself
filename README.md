@@ -16,8 +16,6 @@ No installation needed. Just fork the repo, install dev dependencies, and get ru
 
 Coming soon.<sup>[1](#myfootnote1)</sup>
 
-<a name="myfootnote1">1</a>: Still working on it.
-
 ## Development setup
 
 There are a few dependencies and I want to thank [@btford](https://github.com/btford) and the [@NaturalNode](https://github.com/NaturalNode) Organization for their awesome tools which without them this wouldn't be as easy.
@@ -56,4 +54,6 @@ Tiffany White – [@TiffanyW_412](https://twitter.com/TiffanyW_412)  email: <hey
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [https://github.com/twhite96/checkyoself](https://github.com/twhite96/checkyoself)
+
+<a name="myfootnote1">1</a>: Still working on it.
 
