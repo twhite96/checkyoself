@@ -1,0 +1,24 @@
+{
+  "name": "checkyoself",
+  "version": "0.0.1",
+  "description": "A Grammar checker for your markdown files",
+  "main": "bs-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twhite96/checkyoself.git"
+  },
+  "keywords": [
+    "grammar",
+    "checker",
+    "markdown"
+  ],
+  "author": "Tiffany White",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twhite96/checkyoself/issues"
+  },
+  "homepage": "https://github.com/twhite96/checkyoself#readme"
+}
