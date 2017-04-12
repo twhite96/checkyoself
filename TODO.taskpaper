@@ -1,0 +1,12 @@
+Check Yo Self:
+	- Material Design Lite
+		- What elements?
+			- Fab
+			- Modal
+				- Use Polyfill: https://codepen.io/twhite96/pen/QpeGBm
+			- Cards?
+			- Snackbar?
+			- Progress bar
+	- GitHub Project Pages
+	- Write README
+	- Read documentation and understand it for `write-good` and `natural`’s Tokenizer for NLP
