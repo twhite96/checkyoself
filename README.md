@@ -50,7 +50,7 @@ Usage examples are coming. Too many ideas. Plenty of feature creep. 👎🏽😩
 
 ## Meta
 
-Tiffany White – [@TiffanyW_412](https://twitter.com/TiffanyW_412)  email: <hey@tiffanyrwhite.com>
+Tiffany White – [@TiffanyW_412](https://twitter.com/TiffanyW_412)  email: <feedback@tiffanyrwhite.com>
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
