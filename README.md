@@ -7,7 +7,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![GitHub commits](https://img.shields.io/github/commits-since/twhite96/checkyoself/0.0.1.svg?maxAge=2592000)](https://github.com/twhite96/checkyoself)
 
-Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on [Material Design Lite](https://getmdl.io/index.html) for the UI because I like colorful things. 
+Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on [Material Design Lite](https://getmdl.io/index.html) for the UI because I like colorful things.
 
 ## Installation
 
@@ -28,7 +28,7 @@ npm init
 ```
 and fill in all the gritty details.
 
-The site uses Brian Ford's `write-good` linter for native English and NaturalNode's `natural` for the tokenizers in its Node nlp module.
+The site uses Brian Ford's `write-good` linter for native English and NaturalNode's `natural` for the tokenizers in its Node npm module.
 
 To install `write-good`:
 
@@ -55,5 +55,3 @@ Tiffany White – [@TiffanyW_412](https://twitter.com/TiffanyW_412)  email: <fee
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [https://github.com/twhite96/checkyoself](https://github.com/twhite96/checkyoself)
-
-
