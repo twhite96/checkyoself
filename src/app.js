@@ -57,3 +57,10 @@ if(!localStorage.getItem('bgcolor')) {
 // fontForm.onchange = populateStorage;
 
 /* App Starts Here */
+
+var writeGood = require('write-good');
+var suggestions = writeGood(userInput, {weasel-words: false});
+
+suggestions: [{
+
+}];
