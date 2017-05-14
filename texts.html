@@ -72,7 +72,6 @@
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="index.html" class="mdl-layout__tab">Overview</a>
-          <a href="features.html" class="mdl-layout__tab">Features</a>
           <a href="texts.html" class="mdl-layout__tab is-active">Texts</a>
           <a href="faq.html" class="mdl-layout__tab">FAQ</a>
         </div>
@@ -84,13 +83,19 @@
               <div class="mdl-card__supporting-text">
                 <h4>Texts</h4>
                 This is where your markdown files live. You can add up to 200 2000 word markdown files.
+                <form>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+                    <input class="mdl-textfield__input" type="text" id="markdown" />
+                    <label class="mdl-textfield__label" for="markdown">Text...</label>
+                    <ul id="texts"></ul>
+                  </div>
+                </form>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" value="add to list" id="add">
+                    <i class="material-icons">add</i>
+                </button>
               </div>
             </div>
           </section>
-          <!-- Colored FAB button -->
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-            <i class="material-icons">add</i>
-          </button>
         </div>
       </main>
       <footer class="mdl-mega-footer">
@@ -149,5 +154,6 @@
     </div>
     <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="src/app.js"
   </body>
 </html>
