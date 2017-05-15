@@ -90,15 +90,21 @@
                     <div class="row">
                       <div class="input-field col s12">
                         <i class="material-icons prefix">mode_edit</i>
-                        <textarea id="texts" class="materialize-textarea pink-text"></textarea>
+                        <textarea id="texts" class="materialize-textarea"></textarea>
                         <label for="texts">Add your markdown here...</label>
-                      </div>
                     </div>
                   </form>
                 </div>
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" type="submit" value="add to list" id="add">
-                    <i class="material-icons">add</i>
-                </button>
+                <div class="fixed-action-btn vertical">
+                  <a class="btn-floating btn-large pink">
+                    <i class="large material-icons">add</i>
+                  </a>
+                  <ul>
+                    <li class="btn-floating green"><a href="#!"><i class="material-icons">mode_edit</i></a></li>
+                    <li class="btn-floating purple"><a href="#!"><i class="material-icons">undo</i></a></li>
+                    <li class="btn-floating blue"><a href="#!"><i class="material-icons">redo</i></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </section>
