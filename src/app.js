@@ -21,6 +21,7 @@ function storageAvailable(type) {
 	}
 }
 
+console.log(storageAvailable());
 
 // Example functions to populate storage and set styles.
 // Can comment out or edit
@@ -58,29 +59,10 @@ if(!localStorage.getItem('bgcolor')) {
 // fontForm.onchange = populateStorage;
 
 /* App Starts Here */
-
-// Adds event listener to get text from input
-document.getElementById("add").onclick = function() {
-	'use strict'
-
-	// Collets user input and adds the value of the input to the userInput variable
-	// I need this so that I can present a list of markdown documents to the user
-	var userInput = document.getElementById("markdown").value;
-
-	// Sets up the list element
-	// Now I can prepare the list of documents to present
-	// This is done so that the user can have more than one blog post or document stored for later revision
-	// Will be adding an edit button soon. Need to find out how to implement that
-	var li = "<li>" + userInput + "</li>";
-
-	// Appends markdown documents to a list
-	// Now the user can see what they have written in a list to be edited, etc
-	// This feature is coming soon
-	document.getElementById("list").appendChild(li);
-}
-
+$('#texts').val('New Text');
+$('#texts').trigger('autoresize');
 var writeGood = require('write-good');
-var suggestions = writeGood(userInput, {weasel-words: false});
+var suggestions = writeGood(userInput, {weasel: false});
 
 suggestions: [{
 
