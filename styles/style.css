@@ -3,12 +3,9 @@
  float: right;
  z-index: 999;
 }
-  /* label focus color */
-  .input-field input[type=text]:focus + label {
-    color: #e91e63;
-  }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #e91e63;
-    box-shadow: 0 1px 0 0 #000;
-  }
+
+/* label underline focus color */
+.input-field input[type=text]:focus{
+  border-bottom: 1px solid grey;
+  box-shadow: 0 1px 0 0 grey;
+}
