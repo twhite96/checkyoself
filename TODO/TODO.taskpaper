@@ -1,0 +1,48 @@
+Check Yo Self:
+	- Check Yo Self App @parallel(false) @autodone(true) @context(Tech : iMac)
+		- Look at the Material Design Lite docs. Make notes. Copy snippets. @parallel(true) @autodone(false)
+		- Look at the Natural docs. Make notes. Copy snippets. @parallel(true) @autodone(false)
+		- Look at the write-good docs. Make notes. Copy snippets. @parallel(true) @autodone(false)
+		- Take Treehouse SQL course. Only get the basics. @parallel(true) @autodone(false)
+		- Structure the HTML for the app. @parallel(true) @autodone(false)
+		- Write the navigation for the app. @parallel(true) @autodone(false)
+		- Write HTML for dialog @parallel(true) @autodone(false)
+		- Write HTML for loading bar @parallel(true) @autodone(false)
+		- Write the sidebar for stored documents for the app. @parallel(true) @autodone(false)
+		- Write the body of the app. @parallel(true) @autodone(false)
+		- Write the fab for the app. @parallel(true) @autodone(false)
+		- Write the CSS for the navigation @parallel(true) @autodone(false)
+		- Write the CSS for the body. @parallel(true) @autodone(false)
+		- Write CSS for the fab @parallel(true) @autodone(false)
+		- Write the CSS for the sidebar @parallel(true) @autodone(false)
+		- Add drop shadows to navigation @parallel(true) @autodone(false)
+		- Write CSS for dialog @parallel(true) @autodone(false)
+		- Add drop shadow for fab @parallel(true) @autodone(false)
+		- Add drop shadow for the dialog @parallel(true) @autodone(false)
+		- Write CSS for loading bar @parallel(true) @autodone(false)
+		- Write JavaScript for Natural @parallel(true) @autodone(false)
+		- Write JavaScript for write-good @parallel(true) @autodone(false)
+		- Write Material Design Lite JavaScript for loading bar @parallel(true) @autodone(false)
+		- Add polyfill for dialog @parallel(true) @autodone(false)
+		- Write JavaScript for dialog @parallel(true) @autodone(false)
+		- Write JavaScript for main app @parallel(true) @autodone(false)
+		- Look at docs for setSessionCookie for keeping people's places when they leave the app @parallel(true) @autodone(false)
+		- Write SQL database framework @parallel(true) @autodone(false)
+		- Google connecting data to Postgres database @parallel(true) @autodone(false)
+		- Google storing data in Postgres @parallel(true) @autodone(false)
+		- Google retrieving data in Postgres @parallel(true) @autodone(false)
+		- Google connecting Postgres database to app @parallel(true) @autodone(false)
+		- Look at Heroku docs for Postgres @parallel(true) @autodone(false)
+		- Google how to get app up and running on Postgres @parallel(true) @autodone(false)
+	
+	- Material Design Lite
+		- What elements?
+			- Fab
+			- Modal
+				- Use Polyfill: https://codepen.io/twhite96/pen/QpeGBm
+			- Cards?
+			- Snackbar?
+			- Progress bar
+	- GitHub Project Pages
+	- Write README
+	- Read documentation and understand it for `write-good` and `natural`’s Tokenizer for NLP
