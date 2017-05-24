@@ -3,6 +3,7 @@
 // Testing code can be found here: MDN Github https://github.com/mdn/dom-examples/blob/master/web-storage/main.js
 
 function storageAvailable(type) {
+	'use strict'
 	try {
 		var storage = window[type], x = "__storage_test__";
 		storage.setItem(x, x);
@@ -20,6 +21,7 @@ function storageAvailable(type) {
 	}
 }
 
+console.log(storageAvailable());
 
 // Example functions to populate storage and set styles.
 // Can comment out or edit
@@ -57,3 +59,11 @@ if(!localStorage.getItem('bgcolor')) {
 // fontForm.onchange = populateStorage;
 
 /* App Starts Here */
+$('#texts').val('New Text');
+$('#texts').trigger('autoresize');
+var writeGood = require('write-good');
+var suggestions = writeGood(userInput, {weasel: false});
+
+suggestions: [{
+
+}];

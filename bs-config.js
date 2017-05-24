@@ -14,7 +14,7 @@
  */
 module.exports = {
     "ui": {
-        "port": 3001,
+        "port": 3000,
         "weinre": {
             "port": 8080
         }
