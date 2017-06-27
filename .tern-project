@@ -1,6 +1,8 @@
 {
-  "ecmaVersion": 6,
-  "libs": [],
+  "ecmaVersion": "5",
+  "libs": [
+    "jquery"
+  ],
   "loadEagerly": [
     "app.js"
   ],
