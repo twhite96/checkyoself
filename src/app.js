@@ -2,6 +2,7 @@
 // Wanted to use localStorage instead of a database because the data is just very small text files
 // Testing code can be found here: MDN Github https://github.com/mdn/dom-examples/blob/master/web-storage/main.js
 
+// TODO: Edit this to make sure the functions match your CSS and HTML
 function storageAvailable(type) {
   "use strict";
   try {
@@ -35,7 +36,7 @@ var bgcolorForm = document.getElementById("bgcolor");
 var fontForm = document.getElementById("font");
 
 // Test for localStorage
-
+// TODO: Look for simpler methods to test for localStorage
 if (!localStorage.getItem("bgcolor")) {
   populateStorage();
 } else {
@@ -59,6 +60,9 @@ function setStyles() {
 bgcolorForm.onchange = populateStorage;
 fontForm.onchange = populateStorage;
 
+//TODO: Look at the todo list files from The Web Developer Bootcamp to see how to add event listeners to register click events.
+//TODO: Watch section on DOM manipulation on The Web Developer Bootcamp
+//TODO: Figure out if you need Node/Express to use the write-good package˚
 /* App Starts Here */
 $("#texts").val("New Text");
 $("#texts").trigger("autoresize");
