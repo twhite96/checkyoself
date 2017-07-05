@@ -16,118 +16,124 @@ See the License for the specific language governing permissions and
 limitations under the License
 -->
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="A web app that checks your markdown blog posts for spelling and grammatical errors.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>Check Yo Self</title>
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A web app that checks your markdown blog posts for spelling and grammatical errors.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Check Yo Self</title>
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-  <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
-  <link rel="shortcut icon" href="favicon.ico">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
 
-  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-  <!--
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
   <link rel="canonical" href="http://www.example.com/">
 -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-<link rel="stylesheet" href="styles/style.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<style>
-#view-source {
-  position: fixed;
-  display: block;
-  right: 0;
-  bottom: 0;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  z-index: 900;
-}
-</style>
-</head>
-<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-      </div>
-      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        <h3>Check Yo Self Markdown Grammar Checker</h3>
-      </div>
-      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-      </div>
-      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-        <a href="index.html" class="mdl-layout__tab">Overview</a>
-        <a href="texts.html" class="mdl-layout__tab">Texts</a>
-        <a href="faq.html" class="mdl-layout__tab is-active">FAQ</a>
-      </div>
-    </header>
-    <main class="mdl-layout__content">
-      <div class="mdl-layout__tab-panel is-active" id="overview">
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-          <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__supporting-text">
-              <h4>FAQ</h4>
-              <ol>
-                <li>Is my data on your server somewhere?</li>
-                <p>Nope. It's all stored in your browser locally so that you can retain ownership of your texts and be assured I am not looking at them or selling them.</p>
-                <li>Does this cost anything?</li>
-                <p>Nope. It is free. If you like it you can buy me a <a class="pink-text text-lighten-2" href="https://paypal.me/codenewb" target="_blank"><i class="fa fa-coffee" aria-hidden="true"></i></a>.</p>
-                <li>How will my texts be saved if you're not using a database?</li>
-                <p>Simple. There's some magic in your browser called <code>localStorage</code> that allows me to store your markdown. That's it.</p>
-                <li>How can I delete no longer needed texts?</li>
-                <p>Deleting a document is as easy as selecting a document and hitting delete.</p>
-              </ol>
-            </div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-pink.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      #view-source {
+        position: fixed;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        z-index: 900;
+      }
+    </style>
+  </head>
+
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <nav class="nav-extended cyan">
+          <div class="nav-wrapper">
+            <a href="https://twhite96.github.io" class="brand-logo left">Check Yo Self</a>
           </div>
-        </section>
-      </div>
-    </main>
-    <footer class="page-footer deep-purple">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">About</h5>
-            <p class="grey-text text-lighten-4">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://helloburgh.me" target="_blank"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></a></li>
-              <li><a class="grey-text text-lighten-3" href="https://tiffanywhite.tech" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/twhite96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-              <li><a class="grey-text text-lighten-3" href="https://twitter.com/TiffanyW_412" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tiffanyrwhite/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-              <li><a class="grey-text text-lighten-3" href="https://codepen.io/twhite96/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+          <div class="nav-content">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="tabs tabs-transparent white-text">
+              <li class="tab"><a href="index.html">Overview</a></li>
+              <li class="tab"><a href="texts.html">Texts</a></li>
+              <li class="tab"><a class="active" href="faq.html">FAQ</a></li>
             </ul>
           </div>
+        </nav>
+
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>FAQ</h4>
+                <ol>
+                  <li>Is my data on your server somewhere?</li>
+                  <p>Nope. It's all stored in your browser locally so that you can retain ownership of your texts and be assured I am not looking at them or selling them.</p>
+                  <li>Does this cost anything?</li>
+                  <p>Nope. It is free. If you like it you can buy me a <a class="pink-text text-lighten-2" href="https://paypal.me/codenewb" target="_blank"><i class="fa fa-coffee" aria-hidden="true"></i></a>.</p>
+                  <li>How will my texts be saved if you're not using a database?</li>
+                  <p>Simple. There's some magic in your browser called <code>localStorage</code> that allows me to store your markdown. That's it.</p>
+                  <li>How can I delete no longer needed texts?</li>
+                  <p>Deleting a document is as easy as selecting a document and hitting delete.</p>
+                </ol>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
-      <div class="footer-copyright">
+      </main>
+      <footer class="page-footer cyan">
         <div class="container">
-          © 2017 Tiffany White
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About</h5>
+              <p class="grey-text text-lighten-4">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://helloburgh.me" target="_blank"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://tiffanywhite.tech" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://github.com/twhite96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://twitter.com/TiffanyW_412" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tiffanyrwhite/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://codepen.io/twhite96/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  <a href="https://github.com/twhite96/checkyoself" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
-  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</body>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2017 Tiffany White
+          </div>
+        </div>
+      </footer>
+    </div>
+    <a href="https://github.com/twhite96/checkyoself" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+
 </html>
