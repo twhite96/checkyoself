@@ -23,5 +23,13 @@ ul > li {
 }
 
 main {
-  flex: 1 1 auto;  
+  flex: 1 1 auto;
+}
+
+p {
+  padding-left: 1em;
+}
+
+h4 {
+  padding-left: 1.5rem;
 }
