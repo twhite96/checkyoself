@@ -53,7 +53,7 @@ limitations under the License
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <body>
     <div class="page-flexbox-wrapper">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
         <nav class="nav-extended cyan">
@@ -69,25 +69,25 @@ limitations under the License
           </div>
         </nav>
       </header>
-      <main class="mdl-layout__content">
+      <main>
         <div class="divider" id="overview"></div>
         <div class="section z-depth-2">
           <h4>Texts</h4>
           <p class="flow-text">This is where your markdown files live. You can add up to 200 markdown files at 2000 words a piece.</p>
           <div class="row">
-            <form class="col s12">
+            <div class="col s12">
               <div class="row">
                 <div class="input-field col s12">
                   <i class="material-icons prefix grey-text">mode_edit</i>
                   <textarea id="texts" class="materialize-textarea grey-text"></textarea>
                   <label for="texts" class="grey-text flow-text">Add your markdown here...</label>
                 </div>
-            </form>
+              </div>
             </div>
             <div class="fixed-action-btn vertical">
               <a class="btn-floating btn-large pink">
-                    <i class="large material-icons">add</i>
-                  </a>
+                <i class="large material-icons">add</i>
+              </a>
               <ul>
                 <li class="btn-floating green"><a href="#!"><i class="material-icons">mode_edit</i></a></li>
                 <li class="btn-floating purple"><a href="#!"><i class="material-icons">undo</i></a></li>
