@@ -33,3 +33,7 @@ p {
 h4 {
   padding-left: 1.5rem;
 }
+
+.no-pad {
+  padding: 0em;
+}
