@@ -54,7 +54,7 @@ limitations under the License
   </head>
 
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="page-flexbox-wrapper">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
         <nav class="nav-extended cyan">
           <div class="nav-wrapper">
@@ -70,34 +70,30 @@ limitations under the License
         </nav>
       </header>
       <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Texts</h4> This is where your markdown files live. You can add up to 200 markdown files at 2000 words a piece.
-                <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix grey-text">mode_edit</i>
-                        <textarea id="texts" class="materialize-textarea grey-text"></textarea>
-                        <label for="texts" class="grey-text">Add your markdown here...</label>
-                      </div>
-                  </form>
-                  </div>
-                  <div class="fixed-action-btn vertical">
-                    <a class="btn-floating btn-large pink">
+        <div class="divider" id="overview"></div>
+        <div class="section z-depth-2">
+          <h4>Texts</h4>
+          <p class="flow-text">This is where your markdown files live. You can add up to 200 markdown files at 2000 words a piece.</p>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix grey-text">mode_edit</i>
+                  <textarea id="texts" class="materialize-textarea grey-text"></textarea>
+                  <label for="texts" class="grey-text flow-text">Add your markdown here...</label>
+                </div>
+            </form>
+            </div>
+            <div class="fixed-action-btn vertical">
+              <a class="btn-floating btn-large pink">
                     <i class="large material-icons">add</i>
                   </a>
-                    <ul>
-                      <li class="btn-floating green"><a href="#!"><i class="material-icons">mode_edit</i></a></li>
-                      <li class="btn-floating purple"><a href="#!"><i class="material-icons">undo</i></a></li>
-                      <li class="btn-floating blue"><a href="#!"><i class="material-icons">redo</i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-          </section>
+              <ul>
+                <li class="btn-floating green"><a href="#!"><i class="material-icons">mode_edit</i></a></li>
+                <li class="btn-floating purple"><a href="#!"><i class="material-icons">undo</i></a></li>
+                <li class="btn-floating blue"><a href="#!"><i class="material-icons">redo</i></a></li>
+              </ul>
+            </div>
           </div>
       </main>
       <footer class="page-footer cyan">
@@ -131,7 +127,6 @@ limitations under the License
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
       <script src="src/app.js"></script>
-      <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 
 </html>

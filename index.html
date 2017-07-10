@@ -53,9 +53,9 @@ limitations under the License
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+  <body>
+    <div class="page-flexbox-wrapper">
+      <header>
         <nav class="nav-extended cyan">
           <div class="nav-wrapper">
             <a href="https://twhite96.github.io/checkyoself" class="brand-logo left">Check Yo Self</a>
@@ -69,24 +69,19 @@ limitations under the License
           </div>
         </nav>
       </header>
-      <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Overview</h4>
-                <p>This is a grammar checker for your markdown blog posts. Click or tap the Text tab, and write or paste your text into the text area. Check Yo Self will check your grammar against the write-good library.</p>
+      <main>
+        <div class="divider" id="overview"></div>
+        <div class="section z-depth-2">
+          <h4>Overview</h4>
+          <p class="flow-text">This is a grammar checker for your markdown blog posts. Click or tap the Text tab, and write or paste your text into the text area. Check Yo Self will check your grammar against the write-good library.</p>
 
-                <p>You can save up to 200 markdown files at 2000 words a piece, plenty of documents and words per document, until you're ready to delete them.</p>
+          <p class="flow-text">You can save up to 200 markdown files at 2000 words a piece, plenty of documents and words per document, until you're ready to delete them.</p>
 
-                <p>Hover over the add button to get an undo, redo, and edit button popup. Use these to edit your text or undo a mistake, or redo and not-so-wrong-after-all edit.</p>
+          <p class="flow-text">Hover over the add button to get an undo, redo, and edit button popup. Use these to edit your text or undo a mistake, or redo and not-so-wrong-after-all edit.</p>
 
-                <p>I won't sell your data: in fact, I am not even storing the texts on a database. Everything is local in your browser.</p>
+          <p class="flow-text">I won't sell your data: in fact, I am not even storing the texts on a database. Everything is local in your browser.</p>
 
-                <p>I hope this helps you write good. 😉</p>
-              </div>
-            </div>
-          </section>
+          <p class="flow-text">I hope this helps you write good. 😉</p>
         </div>
       </main>
       <footer class="page-footer cyan">
@@ -120,7 +115,6 @@ limitations under the License
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="src/app.js"></script>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 
 </html>
