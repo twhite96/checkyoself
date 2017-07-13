@@ -16,9 +16,11 @@
     "gulp": "^3.9.1",
     "gulp-qunit": "^1.5.0",
     "gulp-util": "^3.0.7",
+    "natural": "^0.5.4",
     "pg": "6.1.5",
     "pg-hstore": "^2.3.2",
-    "v8-profiler": "^5.5.0"
+    "v8-profiler": "^5.5.0",
+    "write-good": "^0.11.2"
   },
   "keywords": [
     "grammar",

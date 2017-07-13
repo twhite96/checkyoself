@@ -39,5 +39,13 @@ h4 {
 }
 
 .space {
-  line-height: 1.1em;
+  line-height: 1.2em;
+}
+
+.right-pad {
+  padding-right: 1em;
+}
+
+.left-pad {
+  padding-left: 0em;
 }
