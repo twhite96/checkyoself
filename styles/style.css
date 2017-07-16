@@ -49,3 +49,7 @@ h4 {
 .left-pad {
   padding-left: 0em;
 }
+
+#result {
+  text-align: center;
+}

@@ -2,9 +2,29 @@
 //TODO: Watch section on DOM manipulation on The Web Developer Bootcamp
 //TODO: Figure out if you need Node/Express to use the write-good package˚
 /* App Starts Here */
-$("#texts").val("New Text");
-$("#texts").trigger("autoresize");
-var writeGood = require("write-good");
-var suggestions = writeGood(userInput, { weasel: false });
+var markdown = [{
 
-suggestions: [{}];
+}];
+
+
+$('#submit').click(function() {
+  'use strict'
+  var text = $('#texts').val();
+  $('#result').html(text +' ');
+});
+
+texts.addEventListener('keyup', function(){
+  'use strict'
+  if(materialize-textarea.value){
+    materialize-textarea.classList.add("hidden");
+  }
+  else {
+    materialize-textarea.classList.remove("hidden");
+  }
+});
+
+// $("#texts").val("New Text");
+// $("#texts").trigger("autoresize");
+// var writeGood = require("write-good");
+// var suggestions = writeGood(userInput, { weasel: false });
+// suggestions: [{}];
