@@ -2,9 +2,11 @@
 //TODO: Watch section on DOM manipulation on The Web Developer Bootcamp
 //TODO: Figure out if you need Node/Express to use the write-good package˚
 /* App Starts Here */
-var markdown = [{
+var markdown = [
+  {
 
-}];
+  }
+];
 
 
 $('#submit').click(function() {
