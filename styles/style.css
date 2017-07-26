@@ -16,12 +16,40 @@ ul > li {
   padding: 6px;
 }
 
-body {
+.page-flexbox-wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
+}
+
+p {
+  padding: 0em 1em;
+}
+
+h4 {
+  padding-left: 1.5rem;
+}
+
+.no-pad {
+  padding: 0em;
+}
+
+.space {
+  line-height: 1.2em;
+}
+
+.right-pad {
+  padding-right: 1em;
+}
+
+.left-pad {
+  padding-left: 0em;
+}
+
+#result {
+  text-align: center;
 }

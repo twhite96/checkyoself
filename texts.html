@@ -22,6 +22,7 @@ limitations under the License
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A web app that checks your markdown blog posts for spelling and grammatical errors.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="google-site-verification" content="zvlmGqQvRPGIJgdLtOcyrf8vbGcgBNjcjB-bxmZnARg" />
     <title>Check Yo Self</title>
 
     <!-- Add to homescreen for Chrome on Android -->
@@ -40,24 +41,34 @@ limitations under the License
 
     <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-  <link rel="canonical" href="http://www.example.com/">
--->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-102617281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-pink.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+  <body>
+    <div class="page-flexbox-wrapper">
+      <header>
         <nav class="nav-extended cyan">
           <div class="nav-wrapper">
             <a href="https://twhite96.github.io/checkyoself" class="brand-logo left">Check Yo Self</a>
@@ -72,34 +83,32 @@ limitations under the License
         </nav>
       </header>
       <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Texts</h4> This is where your markdown files live. You can add up to 200 markdown files at 2000 words a piece.
-                <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix grey-text">mode_edit</i>
-                        <textarea id="texts" class="materialize-textarea grey-text"></textarea>
-                        <label for="texts" class="grey-text">Add your markdown here...</label>
-                      </div>
-                  </form>
-                  </div>
-                  <div class="fixed-action-btn vertical">
-                    <a class="btn-floating btn-large pink">
-                    <i class="large material-icons">add</i>
-                  </a>
-                    <ul>
-                      <li class="btn-floating green"><a href="#!"><i class="material-icons">mode_edit</i></a></li>
-                      <li class="btn-floating purple"><a href="#!"><i class="material-icons">undo</i></a></li>
-                      <li class="btn-floating blue"><a href="#!"><i class="material-icons">redo</i></a></li>
-                    </ul>
-                  </div>
+        <div class="divider" id="overview"></div>
+        <div class="section z-depth-2">
+          <h4>Texts</h4>
+          <p class="flow-text">This is where your markdown files live. You can add up to 200 markdown files at 2000 words a piece.</p>
+          <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix grey-text">mode_edit</i>
+                  <textarea id="texts" class="materialize-textarea grey-text"></textarea>
+                  <label for="texts" class="grey-text flow-text">Add your markdown here...</label>
                 </div>
               </div>
-          </section>
+            </div>
+            <div class="fixed-action-btn vertical">
+              <a class="btn-floating btn-large pink" id="submit">
+                <i class="large material-icons">add</i>
+              </a>
+              <ul>
+                <li class="btn-floating green"><a href="#!"><i class="material-icons">mode_edit</i></a></li>
+                <li class="btn-floating purple"><a href="#!"><i class="material-icons">undo</i></a></li>
+                <li class="btn-floating blue"><a href="#!"><i class="material-icons">redo</i></a></li>
+              </ul>
+            </div>
+            <div id="result"></div>
+
           </div>
       </main>
       <footer class="page-footer cyan">
@@ -107,7 +116,7 @@ limitations under the License
           <div class="row">
             <div class="col l6 s12">
               <h5 class="white-text">About</h5>
-              <p class="grey-text text-lighten-4">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
+              <p class="grey-text text-lighten-4 no-pad">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
             </div>
             <div class="col l4 offset-l2 s12">
               <h5 class="white-text">Links</h5>
@@ -124,13 +133,15 @@ limitations under the License
         </div>
         <div class="footer-copyright">
           <div class="container">
-            © 2017 Tiffany White
+            <p class="center">&copy; 2017 Tiffany White</p>
+            <p class="no-pad center">Made with ❤️ in Pittsburgh, Pennsylvania</p>
           </div>
         </div>
       </footer>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
       <script src="src/app.js"></script>
-      <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 
 </html>
