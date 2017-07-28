@@ -12,6 +12,7 @@
     "url": "git+https://github.com/twhite96/checkyoself.git"
   },
   "dependencies": {
+    "express": "^4.15.3",
     "grunt": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-qunit": "^1.5.0",
@@ -20,6 +21,9 @@
     "v8-profiler": "^5.5.0",
     "write-good": "^0.11.2"
   },
+  "engines": {
+     "node": "8.2.1"
+ },
   "keywords": [
     "grammar",
     "checker",
