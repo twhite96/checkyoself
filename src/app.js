@@ -15,15 +15,15 @@ $('#submit').click(function() {
   $('#result').html(text +' ');
 });
 
-texts.addEventListener('keyup', function(){
-  'use strict'
-  if(materialize-textarea.value){
-    materialize-textarea.classList.add("hidden");
-  }
-  else {
-    materialize-textarea.classList.remove("hidden");
-  }
-});
+// texts.addEventListener('keyup', function(){
+//   'use strict'
+//   if(materialize-textarea.value){
+//     materialize-textarea.classList.add("hidden");
+//   }
+//   else {
+//     materialize-textarea.classList.remove("hidden");
+//   }
+// });
 
 // $("#texts").val("New Text");
 // $("#texts").trigger("autoresize");
