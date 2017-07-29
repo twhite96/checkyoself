@@ -39,7 +39,7 @@ limitations under the License
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     <script>
       (function(i, s, o, g, r, a, m) {
@@ -75,41 +75,27 @@ limitations under the License
           </div>
           <div class="nav-content">
             <ul class="tabs tabs-transparent white-text">
-              <li class="tab"><a target="_self" href="index.html">Overview</a></li>
-              <li class="tab"><a target="_self" class="active" href="texts.html">Texts</a></li>
-              <li class="tab"><a target="_self" href="faq.html">FAQ</a></li>
+              <li class="tab"><a target="_self" href="index.ejs" class="active">Overview</a></li>
+              <li class="tab"><a target="_self" href="texts.ejs">Texts</a></li>
+              <li class="tab"><a target="_self" href="faq.ejs">FAQ</a></li>
             </ul>
           </div>
         </nav>
       </header>
-      <main class="mdl-layout__content">
+      <main>
         <div class="divider" id="overview"></div>
         <div class="section z-depth-2">
-          <h4>Texts</h4>
-          <p class="flow-text">This is where your markdown files live. You can add up to 200 markdown files at 2000 words a piece.</p>
-          <div class="row">
-            <div class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix grey-text">mode_edit</i>
-                  <textarea id="texts" class="materialize-textarea grey-text"></textarea>
-                  <label for="texts" class="grey-text flow-text">Add your markdown here...</label>
-                </div>
-              </div>
-            </div>
-            <div class="fixed-action-btn vertical">
-              <a class="btn-floating btn-large pink" id="submit">
-                <i class="large material-icons">add</i>
-              </a>
-              <ul>
-                <li class="btn-floating green"><a href="#!"><i class="material-icons">mode_edit</i></a></li>
-                <li class="btn-floating purple"><a href="#!"><i class="material-icons">undo</i></a></li>
-                <li class="btn-floating blue"><a href="#!"><i class="material-icons">redo</i></a></li>
-              </ul>
-            </div>
-            <div id="result"></div>
+          <h4>Overview</h4>
+          <p class="flow-text space">This is a grammar checker for your markdown blog posts. Click or tap the Text tab, and write or paste your text into the text area. Check Yo Self will check your grammar against the write-good library.</p>
 
-          </div>
+          <p class="flow-text space">You can save up to 200 markdown files at 2000 words a piece, plenty of documents and words per document, until you're ready to delete them.</p>
+
+          <p class="flow-text space">Hover over the add button to get an undo, redo, and edit button popup. Use these to edit your text or undo a mistake, or redo and not-so-wrong-after-all edit.</p>
+
+          <p class="flow-text space">I won't sell your data: in fact, I am not even storing the texts on a database. Everything is local in your browser.</p>
+
+          <p class="flow-text space">I hope this helps you write good. 😉</p>
+        </div>
       </main>
       <footer class="page-footer cyan">
         <div class="container">
@@ -138,10 +124,9 @@ limitations under the License
           </div>
         </div>
       </footer>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-      <script src="src/app.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
   </body>
 
 </html>

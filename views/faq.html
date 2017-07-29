@@ -1,0 +1,137 @@
+<!doctype html>
+<!--
+Material Design Lite
+Copyright 2015 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License
+-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A web app that checks your markdown blog posts for spelling and grammatical errors.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="google-site-verification" content="zvlmGqQvRPGIJgdLtOcyrf8vbGcgBNjcjB-bxmZnARg" />
+    <title>Check Yo Self</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-102617281-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <link rel="canonical" href="http://www.example.com/">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-pink.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <div class="page-flexbox-wrapper">
+      <header>
+        <nav class="nav-extended cyan">
+          <div class="nav-wrapper">
+            <a href="https://twhite96.github.io/checkyoself" class="brand-logo left">Check Yo Self</a>
+          </div>
+          <div class="nav-content">
+            <ul class="tabs tabs-transparent white-text">
+              <li class="tab"><a target="_self" href="index.ejs">Overview</a></li>
+              <li class="tab"><a target="_self" href="texts.ejs">Texts</a></li>
+              <li class="tab"><a class="active" target="_self" href="faq.ejs">FAQ</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="divider" id="overview"></div>
+        <div class="section z-depth-2">
+          <h4>FAQ</h4>
+          <ol>
+            <li class="flow-text">Is my data on your server somewhere?</li>
+            <p class="left-pad right-pad">Nope. It's all stored in your browser locally so that you can retain ownership of your texts and be assured I am not looking at them or selling them.</p>
+            <li class="flow-text">Does this cost anything?</li>
+            <p class="no-pad">Nope. It is free. If you like it you can buy me a <a class="pink-text text-lighten-2" href="https://cash.me/$twhite412" target="_blank"><i class="fa fa-coffee fa-2x" aria-hidden="true"></i></a>.</p>
+            <li class="flow-text">How will my texts be saved if you're not using a database?</li>
+            <p class="no-pad">Simple. There's some magic in your browser called <code>localStorage</code> that allows me to store your markdown. That's it.</p>
+            <li class="flow-text">How can I delete no longer needed texts?</li>
+            <p class="no-pad">Deleting a document is as easy as selecting a document and hitting delete.</p>
+          </ol>
+        </div>
+
+      </main>
+      <footer class="page-footer cyan">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About</h5>
+              <p class="grey-text text-lighten-4 no-pad">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://tiffanywhite.tech" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://github.com/twhite96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://twitter.com/TiffanyW_412" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tiffanyrwhite/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://codepen.io/twhite96/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://jsfiddle.net/user/trwhite6878" target="_blank"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <p class="center">&copy; 2017 Tiffany White</p>
+            <p class="no-pad center">Made with ❤️ in Pittsburgh, Pennsylvania</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  </body>
+
+</html>
