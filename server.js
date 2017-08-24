@@ -8,14 +8,15 @@ var express = require('express'),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose');
 
-var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/yelp_camp';
+var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/checkyoself';
 var sessionSecret = process.env.SESSION_SECRET || 'None of your business, mate';
 
 mongoose.connect(databaseURL);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8000);
 app.use(favicon(path.join(__dirname, '/public/favicon.ico')));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
   res.render('index');
@@ -25,7 +26,7 @@ app.get('/texts', function(req, res) {
 });
 
 app.get('/faq', function(req, res) {
-  res.render('faq');
+  res.redner('faq');
 });
 
 // app.get("*", function(req, res) {
@@ -33,5 +34,5 @@ app.get('/faq', function(req, res) {
 // });
 
 app.listen(app.get('port'), function() {
-  console.log('App is listening on port 3000');
+  console.log('App is listening on port 8000');
 });
