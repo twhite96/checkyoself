@@ -1,4 +1,3 @@
-### Node.gitignore
 # Logs
 logs
 *.log
@@ -58,5 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
-
-
+# Mongo files
+data/db

@@ -1,0 +1,66 @@
+<% include patials/header %>
+
+  <body>
+    <div class="page-flexbox-wrapper">
+      <header>
+        <nav class="nav-extended cyan">
+          <div class="nav-wrapper">
+            <a href="https://twhite96.github.io/checkyoself" class="brand-logo left">Check Yo Self</a>
+          </div>
+          <div class="nav-content">
+            <ul class="tabs tabs-transparent white-text">
+              <li class="tab"><a target="_self" href="/">Overview</a></li>
+              <li class="tab"><a target="_self" class="active" href="texts.ejs">Texts</a></li>
+              <li class="tab"><a target="_self" href="faq.ejs">FAQ</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="divider" id="overview"></div>
+        <div class="section z-depth-2">
+          <h4>Texts</h4>
+          <p class="flow-text">This is where your markdown files live. You can add up to 200 markdown files at 2000 words a piece.</p>
+          <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix grey-text">mode_edit</i>
+                  <textarea id="texts" class="materialize-textarea grey-text">
+                  </textarea>
+                  <label for="texts" class="grey-text flow-text">Add your markdown here...</label>
+                </div>
+              </div>
+            </div>
+            <div class="fixed-action-btn vertical">
+              <a class="btn-floating btn-large waves-effect waves-light pink" id="submit">
+                <i class="material-icons">add</i>
+              </a>
+              <ul>
+                <li class="btn-floating btn-large waves-effect waves-light red"><a href="#!"><i class="material-icons">delete</i></a></li>
+              </ul>
+            </div>
+            <div class="textList"></div>
+          </div>
+      </main>
+      <footer class="page-footer cyan">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About</h5>
+              <p class="grey-text text-lighten-4 no-pad">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://tiffanywhite.tech" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://github.com/twhite96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://twitter.com/TiffanyW_412" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tiffanyrwhite/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://codepen.io/twhite96/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://jsfiddle.net/user/trwhite6878" target="_blank"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <% include partials/footer %>

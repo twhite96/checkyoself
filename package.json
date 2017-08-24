@@ -12,14 +12,18 @@
     "url": "git+https://github.com/twhite96/checkyoself.git"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
     "grunt": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-qunit": "^1.5.0",
     "gulp-util": "^3.0.7",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.8",
     "multi-views": "^0.1.1",
     "natural": "^0.5.4",
+    "serve-favicon": "^2.4.3",
     "v8-profiler": "^5.5.0",
     "write-good": "^0.11.2"
   },
