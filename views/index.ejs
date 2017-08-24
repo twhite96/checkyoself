@@ -2,53 +2,40 @@
 
   <body>
     <div class="page-flexbox-wrapper">
-      <header>
-        <nav class="nav-extended cyan">
-          <div class="nav-wrapper">
-            <a href="https://twhite96.github.io/checkyoself" class="brand-logo left">Check Yo Self</a>
+      <% inlcude partials/nav %>
+        <main>
+          <div class="divider" id="overview"></div>
+          <div class="section z-depth-2">
+            <h4>Overview</h4>
+            <p class="flow-text space">This is a grammar checker for your markdown blog posts. Click or tap the Text tab, and write or paste your text into the text area. Check Yo Self will check your grammar against the write-good library.</p>
+
+            <p class="flow-text space">You can save up to 200 markdown files at 2000 words a piece, plenty of documents and words per document, until you're ready to delete them.</p>
+
+            <p class="flow-text space">Hover over the add button to get an undo, redo, and edit button popup. Use these to edit your text or undo a mistake, or redo and not-so-wrong-after-all edit.</p>
+
+            <p class="flow-text space">I won't sell your data: in fact, I am not even storing the texts on a database. Everything is local in your browser.</p>
+
+            <p class="flow-text space">I hope this helps you write good. 😉</p>
           </div>
-          <div class="nav-content">
-            <ul class="tabs tabs-transparent white-text">
-              <li class="tab"><a target="_self" href="/" class="active">Overview</a></li>
-              <li class="tab"><a target="_self" href="texts.ejs">Texts</a></li>
-              <li class="tab"><a target="_self" href="faq.ejs">FAQ</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <div class="divider" id="overview"></div>
-        <div class="section z-depth-2">
-          <h4>Overview</h4>
-          <p class="flow-text space">This is a grammar checker for your markdown blog posts. Click or tap the Text tab, and write or paste your text into the text area. Check Yo Self will check your grammar against the write-good library.</p>
-
-          <p class="flow-text space">You can save up to 200 markdown files at 2000 words a piece, plenty of documents and words per document, until you're ready to delete them.</p>
-
-          <p class="flow-text space">Hover over the add button to get an undo, redo, and edit button popup. Use these to edit your text or undo a mistake, or redo and not-so-wrong-after-all edit.</p>
-
-          <p class="flow-text space">I won't sell your data: in fact, I am not even storing the texts on a database. Everything is local in your browser.</p>
-
-          <p class="flow-text space">I hope this helps you write good. 😉</p>
-        </div>
-      </main>
-      <footer class="page-footer cyan">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">About</h5>
-              <p class="grey-text text-lighten-4 no-pad">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="https://tiffanywhite.tech" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://github.com/twhite96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://twitter.com/TiffanyW_412" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tiffanyrwhite/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://codepen.io/twhite96/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://jsfiddle.net/user/trwhite6878" target="_blank"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a></li>
-              </ul>
+        </main>
+        <footer class="page-footer cyan">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">About</h5>
+                <p class="grey-text text-lighten-4 no-pad">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://tiffanywhite.tech" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/twhite96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/TiffanyW_412" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tiffanyrwhite/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://codepen.io/twhite96/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://jsfiddle.net/user/trwhite6878" target="_blank"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <% include partials/footer %>
+          <% include partials/footer %>

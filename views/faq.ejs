@@ -2,55 +2,42 @@
 
   <body>
     <div class="page-flexbox-wrapper">
-      <header>
-        <nav class="nav-extended cyan">
-          <div class="nav-wrapper">
-            <a href="https://twhite96.github.io/checkyoself" class="brand-logo left">Check Yo Self</a>
+      <% include partials/nav %>
+        <main class="mdl-layout__content">
+          <div class="divider" id="overview"></div>
+          <div class="section z-depth-2">
+            <h4>FAQ</h4>
+            <ol>
+              <li class="flow-text">Is my data on your server somewhere?</li>
+              <p class="left-pad right-pad">Nope. It's all stored in your browser locally so that you can retain ownership of your texts and be assured I am not looking at them or selling them.</p>
+              <li class="flow-text">Does this cost anything?</li>
+              <p class="no-pad">Nope. It is free. If you like it you can buy me a <a class="pink-text text-lighten-2" href="https://cash.me/$twhite412" target="_blank"><i class="fa fa-coffee fa-2x" aria-hidden="true"></i></a>.</p>
+              <li class="flow-text">How will my texts be saved if you're not using a database?</li>
+              <p class="no-pad">Simple. There's some magic in your browser called <code>localStorage</code> that allows me to store your markdown. That's it.</p>
+              <li class="flow-text">How can I delete no longer needed texts?</li>
+              <p class="no-pad">Deleting a document is as easy as selecting a document and hitting delete.</p>
+            </ol>
           </div>
-          <div class="nav-content">
-            <ul class="tabs tabs-transparent white-text">
-              <li class="tab"><a target="_self" href="/">Overview</a></li>
-              <li class="tab"><a target="_self" href="texts.ejs">Texts</a></li>
-              <li class="tab"><a class="active" target="_self" href="faq.ejs">FAQ</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="divider" id="overview"></div>
-        <div class="section z-depth-2">
-          <h4>FAQ</h4>
-          <ol>
-            <li class="flow-text">Is my data on your server somewhere?</li>
-            <p class="left-pad right-pad">Nope. It's all stored in your browser locally so that you can retain ownership of your texts and be assured I am not looking at them or selling them.</p>
-            <li class="flow-text">Does this cost anything?</li>
-            <p class="no-pad">Nope. It is free. If you like it you can buy me a <a class="pink-text text-lighten-2" href="https://cash.me/$twhite412" target="_blank"><i class="fa fa-coffee fa-2x" aria-hidden="true"></i></a>.</p>
-            <li class="flow-text">How will my texts be saved if you're not using a database?</li>
-            <p class="no-pad">Simple. There's some magic in your browser called <code>localStorage</code> that allows me to store your markdown. That's it.</p>
-            <li class="flow-text">How can I delete no longer needed texts?</li>
-            <p class="no-pad">Deleting a document is as easy as selecting a document and hitting delete.</p>
-          </ol>
-        </div>
 
-      </main>
-      <footer class="page-footer cyan">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">About</h5>
-              <p class="grey-text text-lighten-4 no-pad">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="https://tiffanywhite.tech" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://github.com/twhite96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://twitter.com/TiffanyW_412" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tiffanyrwhite/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://codepen.io/twhite96/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="https://jsfiddle.net/user/trwhite6878" target="_blank"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a></li>
-              </ul>
+        </main>
+        <footer class="page-footer cyan">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">About</h5>
+                <p class="grey-text text-lighten-4 no-pad">My name is Tiffany and I am a junior level developer located in Pittsburgh. I like non-dairy ice cream, programming random stuff, and cats.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://tiffanywhite.tech" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/twhite96" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/TiffanyW_412" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tiffanyrwhite/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://codepen.io/twhite96/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://jsfiddle.net/user/trwhite6878" target="_blank"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <% inlcude partials/footer %>
+          <% include partials/footer %>

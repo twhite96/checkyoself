@@ -14,6 +14,7 @@ var sessionSecret = process.env.SESSION_SECRET || 'None of your business, mate';
 mongoose.connect(databaseURL);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 app.set('port', process.env.PORT || 8000);
 app.use(favicon(path.join(__dirname, '/public/favicon.ico')));
 app.use(express.static(__dirname + '/public'));
@@ -26,7 +27,7 @@ app.get('/texts', function(req, res) {
 });
 
 app.get('/faq', function(req, res) {
-  res.redner('faq');
+  res.render('faq');
 });
 
 // app.get("*", function(req, res) {
