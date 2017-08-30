@@ -1,4 +1,6 @@
 # Check Yo Self
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/twhite96/checkyoself.svg)](https://greenkeeper.io/)
 >  A site to check the grammar of your markdown blog posts/texts.
 
 [![Travis](https://img.shields.io/travis/twhite96/checkyoself.svg)](https://travis-ci.org/twhite96/checkyoself)
