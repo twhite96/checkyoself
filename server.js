@@ -26,6 +26,10 @@ app.get('/texts', function(req, res) {
   res.render('texts');
 });
 
+app.get('/show', function(req, res) {
+  res.render('show');
+});
+
 app.get('/faq', function(req, res) {
   res.render('faq');
 });
