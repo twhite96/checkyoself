@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+  <body>
+    <div class="page-flexbox-wrapper">
+      <% include partials/nav %>
+        <main class="mdl-layout__content">
+          <div class="divider" id="overview"></div>
+          <div class="section z-depth-2">
+            <h4>FAQ</h4>
+            <ol>
+              <li class="flow-text">Is my data on your server somewhere?</li>
+              <p class="left-pad right-pad">Nope. It's all stored in your browser locally so that you can retain ownership of your texts and be assured I am not looking at them or selling them.</p>
+              <li class="flow-text">Does this cost anything?</li>
+              <p class="no-pad">Nope. It is free. If you like it you can buy me a <a class="pink-text text-lighten-2" href="https://cash.me/$twhite412" target="_blank"><i class="fa fa-coffee fa-2x" aria-hidden="true"></i></a>.</p>
+              <li class="flow-text">How will my texts be saved if you're not using a database?</li>
+              <p class="no-pad">Simple. There's some magic in your browser called <code>localStorage</code> that allows me to store your markdown. That's it.</p>
+              <li class="flow-text">How can I delete no longer needed texts?</li>
+              <p class="no-pad">Deleting a document is as easy as selecting a document and hitting delete.</p>
+            </ol>
+          </div>
+
+        </main>
+          <% include partials/footer %>

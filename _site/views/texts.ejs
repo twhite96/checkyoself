@@ -1,0 +1,38 @@
+<% include partials/header %>
+
+  <body>
+    <div class="page-flexbox-wrapper">
+      <% include partials/nav %>
+        <main class="mdl-layout__content">
+          <div class="divider" id="overview"></div>
+          <div class="section z-depth-2">
+            <h4>Texts</h4>
+            <p class="flow-text">This is where you add your markdown. Go ahead! Add as much as you like.</p>
+            <div class="row">
+              <div class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix grey-text">mode_edit</i>
+                    <textarea id="texts" class="materialize-textarea grey-text">
+                  </textarea>
+                    <label for="texts" class="grey-text flow-text">Add your markdown here...</label>
+                  </div>
+                </div>
+              </div>
+              <div class="fixed-action-btn vertical">
+                <a class="btn-floating btn-large waves-effect waves-light pink" id="submit">
+                <i class="material-icons">add</i>
+              </a>
+                <ul>
+                  <li class="btn-floating btn-large waves-effect waves-light red"><a href="#!"><i class="material-icons">delete</i></a></li>
+                  <li class="btn-floating btn-large waves-effect waves-light orange"><a href="#!"><i class="material-icons">undo</i></a></li>
+                  <li class="btn-floating btn-large waves-effect waves-light green"><a href="#!"><i class="material-icons">redo</i></a></li>
+                </ul>
+              </div>
+
+              <!--TODO: add the following div to show.ejs -->
+
+              <div class="textList"></div>
+            </div>
+        </main>
+          <% include partials/footer %>
