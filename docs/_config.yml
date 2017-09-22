@@ -1,22 +1,22 @@
 # general configuration
-url: 'http://twhite96.github.io/checkyoself/docs'
-baseurl: '/docs'
+url: http://excentris.net
+baseurl: ''
 
 # compass configuration
 compass:
   # an avatar or logo (optional)
-  logo: "/images/chys.png"
+  logo: "/images/compass.png"
   # author will appear under the avatar (optional)
-  author: "Tiffany White"
+  author: "Compass"
   # tagline will appear under the title (optional)
-  tagline: "Check Yo Self: A Markdown Grammar Checker for Blog Posts"
+  tagline: "The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page"
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
   include_content: true
   # if include_analytics is true, the content of the analytics.html include will
   # be added at the end of the <head> section. You can add your Google Analytics
   # Tracking Code to that file.
-  include_analytics: true
+  include_analytics: false
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
