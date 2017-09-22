@@ -7,7 +7,7 @@ compass:
   # an avatar or logo (optional)
   logo: "/images/chys.png"
   # author will appear under the avatar (optional)
-  author: "TCheck Yo Self"
+  author: "Check Yo Self"
   # tagline will appear under the title (optional)
   tagline: "A Markdown Grammar Checker for Blog Posts"
   # if include_content is true, the contents of the content.html include will be
