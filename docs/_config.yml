@@ -1,6 +1,6 @@
 # general configuration
 url: 'http://twhite96.github.io/checkyoself/docs'
-baseurl: '/checkyoself'
+baseurl: '/checkyoself/docs'
 
 # compass configuration
 compass:
