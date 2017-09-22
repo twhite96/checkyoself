@@ -7,9 +7,9 @@ compass:
   # an avatar or logo (optional)
   logo: "/images/chys.png"
   # author will appear under the avatar (optional)
-  author: "Tiffany White"
+  author: "TCheck Yo Self"
   # tagline will appear under the title (optional)
-  tagline: "Check Yo Self: A Markdown Grammar Checker for Blog Posts"
+  tagline: "A Markdown Grammar Checker for Blog Posts"
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
   include_content: true
