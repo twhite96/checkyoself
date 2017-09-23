@@ -1,6 +1,6 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'Check Yo Self: Markdown Grammar Checker for Blogs'
-subtitle: 'Check your posts. Look like a real writer.'
+title: 'Check Yo Self'
+subtitle: 'Markdown Grammar Checker for Blog Posts'
 
 # if you wish to integrate disqus on pages set your shortname here
 disqus_shortname: ''
