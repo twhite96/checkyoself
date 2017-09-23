@@ -1,9 +1,9 @@
 # Check Yo Self
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/twhite96/checkyoself.svg)](https://greenkeeper.io/)
 >  A site to check the grammar of your markdown blog posts/texts.
 
 [![Travis](https://img.shields.io/travis/twhite96/checkyoself.svg)](https://travis-ci.org/twhite96/checkyoself)
+[![Greenkeeper badge](https://badges.greenkeeper.io/twhite96/checkyoself.svg)](https://greenkeeper.io/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/TiffanyW_412.svg?style=social&label=Follow)](https://twitter.com/TiffanyW_412)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
