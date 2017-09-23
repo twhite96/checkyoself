@@ -12,7 +12,7 @@ google_analytics_id: ''
 #   0 - always hide
 #   1 - always show
 #   2 - show only if posts are present
-navigation: 2
+navigation: 1
 
 # URL to source code, used in _includes/footer.html
 codeurl: 'https://github.com/twhite96/checkyoself/'
