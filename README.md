@@ -11,39 +11,13 @@
 
 Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on [Material Design Lite](https://getmdl.io/index.html) for the UI because I like colorful things.
 
-## Installation
+## Docs
 
-No installation needed. Just fork the repo, install dev dependencies, and get running.
+Check out [the docs](https://twhite96.github.io/checkyoself/documentation/).
 
-## Usage example
+## Tutorial
 
-Coming soon. WIP.
-
-## Development setup
-
-There are a few dependencies and I want to thank [@btford](https://github.com/btford) and the [@NaturalNode](https://github.com/NaturalNode) Organization for their awesome tools which without them this wouldn't be as easy.
-
-Fork the repo, and add your own `package.json` file with:
-
-```sh
-npm init
-```
-and fill in all the gritty details.
-
-The site uses Brian Ford's `write-good` linter for native English and NaturalNode's `natural` for the tokenizers in its Node npm module.
-
-To install `write-good`:
-
-```sh
-npm install write-good
-```
-...and natural:
-
-```sh
-npm install natural
-```
-
-Usage examples are coming. Too many ideas. Plenty of feature creep. 👎🏽😩
+For how to use the app, check out 
 
 ## Release History
 
