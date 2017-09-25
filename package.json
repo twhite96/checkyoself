@@ -20,6 +20,7 @@
     "gulp": "^3.9.1",
     "gulp-qunit": "^1.5.0",
     "gulp-util": "^3.0.7",
+    "hunspell-spellchecker": "^1.0.2",
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.8",
     "multi-views": "^0.1.1",
