@@ -1,3 +1,9 @@
+body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: hidden;
+
+}
+
 .fixed-action-btn {
   position: absolute;
   float: right;
