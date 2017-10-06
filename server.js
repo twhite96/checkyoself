@@ -1,12 +1,17 @@
 /*jslint node: true*/
 
-var express = require('express'),
+const express = require('express'),
   app = express(),
   favicon = require('serve-favicon'),
   path = require('path'),
   http = require('http'),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose');
+  writeGood = require('write-good');
+  spell = require('spell-checker');
+  tween = require('gsap');
+
+  // TODO: Put app.js logic in this file according to routes.
 
 var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/checkyoself';
 var sessionSecret = process.env.SESSION_SECRET || 'None of your business, mate';
@@ -34,9 +39,9 @@ app.get('/faq', function(req, res) {
   res.render('faq');
 });
 
-// app.get("*", function(req, res) {
-//   res.render("404");
-// });
+app.get("*", function(req, res) {
+  res.render("404");
+});
 
 app.listen(app.get('port'), function() {
   console.log('App is listening on port 8000');

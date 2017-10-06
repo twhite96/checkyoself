@@ -12,22 +12,23 @@
     "url": "git+https://github.com/twhite96/checkyoself.git"
   },
   "dependencies": {
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.18.2",
     "ejs": "^2.5.7",
     "ejs-lint": "^0.3.0",
-    "express": "^4.15.3",
+    "express": "^4.16.1",
     "grunt": "^1.0.1",
+    "gsap": "^1.20.3",
     "gulp": "^3.9.1",
     "gulp-qunit": "^1.5.0",
     "gulp-util": "^3.0.7",
-    "hunspell-spellchecker": "^1.0.2",
     "mongodb": "^2.2.31",
-    "mongoose": "^4.11.8",
+    "mongoose": "^4.11.13",
     "multi-views": "^0.1.1",
     "natural": "^0.5.4",
-    "serve-favicon": "^2.4.3",
+    "serve-favicon": "^2.4.5",
+    "spell-checker": "0.0.26",
     "v8-profiler": "^5.5.0",
-    "write-good": "^0.11.2"
+    "write-good": "^0.11.3"
   },
   "engines": {
     "node": "8.2.1"
