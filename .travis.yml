@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - "8.3.0"
 install:
+  - npm install -g snyk
+  - npm install
+  - snyk auth 2b219c46-9899-4ee5-bc48-3dce173ef7cc
   - snyk protect
   - snyk test
 after_success:
