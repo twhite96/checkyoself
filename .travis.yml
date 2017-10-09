@@ -1,3 +1,10 @@
 language: node_js
 node_js:
-  - "6.3.1"
+  - "8.3.0"
+install:
+  - bundle install --path vendor/bundle
+  - snyk test
+after_success:
+  - snyk monitor
+after_deploy:
+  - snyk monitor
