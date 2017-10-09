@@ -5,7 +5,9 @@
   "main": "bs-config.js",
   "scripts": {
     "start": "node server.js",
-    "test": "gulp"
+    "test": "snyk test && gulp",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -22,13 +24,14 @@
     "gulp-qunit": "^1.5.0",
     "gulp-util": "^3.0.7",
     "mongodb": "^2.2.31",
-    "mongoose": "^4.11.13",
+    "mongoose": "^4.11.14",
     "multi-views": "^0.1.1",
     "natural": "^0.5.4",
     "serve-favicon": "^2.4.5",
     "spell-checker": "0.0.26",
-    "v8-profiler": "^5.5.0",
-    "write-good": "^0.11.3"
+    "v8-profiler": "^5.7.0",
+    "write-good": "^0.11.3",
+    "snyk": "^1.42.4"
   },
   "engines": {
     "node": "8.2.1"
@@ -43,5 +46,6 @@
   "bugs": {
     "url": "https://github.com/twhite96/checkyoself/issues"
   },
-  "homepage": "https://github.com/twhite96/checkyoself#readme"
+  "homepage": "https://github.com/twhite96/checkyoself#readme",
+  "snyk": true
 }
