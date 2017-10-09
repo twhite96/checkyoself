@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "8.3.0"
 install:
-  - bundle install --path vendor/bundle
+  - snyk protect
   - snyk test
 after_success:
   - snyk monitor
