@@ -6,23 +6,26 @@ const express = require('express'),
   path = require('path'),
   http = require('http'),
   bodyParser = require('body-parser'),
-  mongoose = require('mongoose');
-  writeGood = require('write-good');
-  spell = require('spell-checker');
-  tween = require('gsap');
+  mongoose = require('mongoose'),
+  writeGood = require('write-good'),
+  spell = require('spell-checker'),
+  TweenMax = require('gsap'),
+  TimelineMax = require('gsap'),
+  TweenLite = require('gsap');
 
-  // TODO: Put app.js logic in this file according to routes.
+// TODO: Put app.js logic in this file according to routes.
 
 var databaseURL = process.env.DATABASEURL || 'mongodb://localhost/checkyoself';
 var sessionSecret = process.env.SESSION_SECRET || 'None of your business, mate';
 
 mongoose.connect(databaseURL);
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.set('port', process.env.PORT || 8000);
 app.use(favicon(path.join(__dirname, '/public/favicon.ico')));
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + 'public/src'));
 
 app.get('/', function(req, res) {
   res.render('index');
@@ -39,8 +42,8 @@ app.get('/faq', function(req, res) {
   res.render('faq');
 });
 
-app.get("*", function(req, res) {
-  res.render("404");
+app.get('*', function(req, res) {
+  res.render('404');
 });
 
 app.listen(app.get('port'), function() {
