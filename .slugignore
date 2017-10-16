@@ -1,5 +1,5 @@
 # Heres a comment
 *.psd
 *.pdf
-/node_modules
+node_modules/
 .tern-project
