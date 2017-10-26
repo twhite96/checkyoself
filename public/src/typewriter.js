@@ -1,5 +1,6 @@
 // Got this code from Simon Shahriveri on CSS-Tricks and CodePen here:
 // https://codepen.io/hi-im-si/pen/DHoup
+/* jshint ignore:start */
 
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
