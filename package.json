@@ -23,6 +23,7 @@
     "axios": "^0.14.0",
     "body-parser": "^1.18.2",
     "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
     "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
     "ejs-lint": "^0.3.0",
