@@ -57,7 +57,7 @@ passport.deserializeUser(User.deserializeUser());
 app.get('/', function(req, res) {
   res.render('index');
 });
-app.get('./text/texts', function(req, res) {
+app.get('/texts', function(req, res) {
   res.render('texts');
 });
 
