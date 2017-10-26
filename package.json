@@ -2,7 +2,7 @@
   "name": "checkyoself",
   "version": "0.0.1",
   "description": "A Grammar checker for your markdown files",
-  "main": "bs-config.js",
+  "main": "server.js",
   "scripts": {
     "start": "react-scripts start",
     "start-dev": "nf start -p 3000",

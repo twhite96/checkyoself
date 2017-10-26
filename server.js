@@ -13,9 +13,12 @@ const express = require('express'),
   multiViews = require('multi-views'),
   flash       = require("connect-flash"),
   passport    = require("passport"),
-  LocalStrategy = require("passport-local"),
-  methodOverride = require("method-override"),
-  cookieParser = require("cookie-parser");
+  LocalStrategy = require('passport-local'),
+  methodOverride = require('method-override'),
+  cookieParser = require('cookie-parser'),
+  User  = require('./models/user'),
+  Text = require('./models/text');
+
 
 
 
@@ -54,7 +57,7 @@ passport.deserializeUser(User.deserializeUser());
 app.get('/', function(req, res) {
   res.render('index');
 });
-app.get('/texts', function(req, res) {
+app.get('./text/texts', function(req, res) {
   res.render('texts');
 });
 
