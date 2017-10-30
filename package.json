@@ -48,7 +48,7 @@
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "serve-favicon": "^2.4.5",
-    "snyk": "^1.42.4",
+    "snyk": "^1.46.0",
     "spell-checker": "0.0.26",
     "v8-profiler": "^5.7.0",
     "write-good": "^0.11.3"
