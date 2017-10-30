@@ -13,7 +13,7 @@
     "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
-    "react-scripts": "0.4.1"
+    "react-scripts": "1.0.15"
   },
   "repository": {
     "type": "git",
