@@ -20,7 +20,7 @@
     "url": "git+https://github.com/twhite96/checkyoself.git"
   },
   "dependencies": {
-    "axios": "^0.14.0",
+    "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
