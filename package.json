@@ -32,7 +32,7 @@
     "foreman": "^2.0.0",
     "grunt": "^1.0.1",
     "gulp": "^3.9.1",
-    "gulp-qunit": "^1.5.0",
+    "gulp-qunit": "^2.0.0",
     "gulp-util": "^3.0.7",
     "marked": "^0.3.6",
     "method-override": "^2.3.10",
