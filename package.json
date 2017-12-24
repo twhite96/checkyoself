@@ -37,7 +37,7 @@
     "marked": "^0.3.6",
     "method-override": "^2.3.10",
     "moment": "^2.19.1",
-    "mongodb": "^2.2.31",
+    "mongodb": "^3.0.0",
     "mongoose": "^4.11.14",
     "multi-views": "^0.1.1",
     "nodemon": "^1.10.2",
