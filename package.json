@@ -29,7 +29,7 @@
     "ejs-lint": "^0.3.0",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
-    "foreman": "^2.0.0",
+    "foreman": "^3.0.0",
     "grunt": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-qunit": "^1.5.2",
