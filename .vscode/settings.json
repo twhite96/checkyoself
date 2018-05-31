@@ -1,5 +1,12 @@
 {
-  "cSpell.words": [
-    "checkyoself"
-  ]
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "git.ignoreLimitWarning": true,
+  "prettier.requireConfig": false,
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "files.autoSave": "off",
+  "prettier.bracketSpacing": true,
+  "prettier.jsxBracketSameLine": true
 }

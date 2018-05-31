@@ -62,3 +62,6 @@ data/db
 
 # jshint files
 .jshintrc
+
+# VSCode Config
+.vscode
