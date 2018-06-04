@@ -6,7 +6,7 @@ cache:
   - node_modules
 script:
   - npm test
-  - npm run build
+  - CI=false npm run build
 install:
   - npm install -g snyk
   - npm install
