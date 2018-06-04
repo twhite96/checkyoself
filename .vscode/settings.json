@@ -8,5 +8,6 @@
   "prettier.singleQuote": true,
   "files.autoSave": "off",
   "prettier.bracketSpacing": true,
-  "prettier.jsxBracketSameLine": true
+  "prettier.jsxBracketSameLine": true,
+  "editor.formatOnSave": false
 }

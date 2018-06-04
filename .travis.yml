@@ -1,6 +1,12 @@
 language: node_js
 node_js:
-  - "8.3.0"
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build
 install:
   - npm install -g snyk
   - npm install
@@ -8,5 +14,14 @@ install:
   - snyk protect
 after_success:
   - snyk monitor
+branches:
+  only:
+  - master
+deploy:
+  provider: surge
+  project: ./build
+  skip_cleanup: true
+
 after_deploy:
   - snyk monitor
+
