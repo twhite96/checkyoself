@@ -19,7 +19,7 @@ branches:
   - master
 deploy:
   provider: surge
-  project: ./build
+  project: ./build --domain https://checkyoself.surge.sh
   skip_cleanup: true
 
 after_deploy:
