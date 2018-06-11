@@ -1,73 +1,58 @@
 /* jshint ignore: start */
 
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import PropTypes from 'prop-types';
-import {withStyles} from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+import './App.css';
+import Header from './components/Header';
+import Text from './components/Text';
+import Popup from 'reactjs-popup';
+import Hello from './components/Hello';
+import BurgerIcon from './components/BurgerIcon';
+import Menu from './components/Menu';
+
 
 const styles = {
-  root: {
-    flexGrow: 1
-  },
-  flex: {
-    flex: 1
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20
-
-  }
+  fontFamily: 'sans-serif',
+  textAlign: 'center',
+  marginTop: '40px'
 };
-
+const contentStyle = {
+  background: 'rgba(255,255,255,0)',
+  width: '80%',
+  border: 'none'
+};
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
+      <div>
+        <div className="App">
+          <div>
+            <Header />
+            {this.props.children}
+          </div>
+          <p className="App-intro">
+            To get started, edit
+            <code>src/App.js</code>
+            and save to reload.
+          </p>
+        </div>
+        <div style={styles}>
+          <Hello name="Create cool burger menu using reactjs-popup" />
+          <Popup
+            modal
+            overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+            contentStyle={contentStyle}
+            closeOnDocumentClick={false}
+            trigger={open => <BurgerIcon open={open} />}
+          >
+            {close => <Menu close={close} />}
+          </Popup>
+        </div>
       </div>
     );
   }
 }
 
-function ButtonAppBar(props) {
-  const {classes} = props;
-  return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-            <MenuIcon/>
-          </IconButton>
-          <Typography variant="title" color="inherit" className={classes.flex}>
-            Title
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
-}
+export default App;
 
-ButtonAppBar.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(ButtonAppBar);
-// import '../App.css';
 
 

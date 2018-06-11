@@ -1,0 +1,17 @@
+@import'../node_modules/bulma/sass/utilities/initial-variables';
+@import '../node_modules/bulma/sass/utilities/functions';
+
+
+$blue: #06D7D9;
+
+// Add pink and its invert
+// Add a serif family
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $blue;
+$primary-invert: $blue-invert;
+// Use the existing orange as the danger color
+// Use the new serif family
+
+@import '../node_modules/bulma'
+

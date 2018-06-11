@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import App from './App';
-import Landing from './LandingPage/Landing';
-import NotFound from './404/NotFound';
+import App from '../App';
+import NotFound from './NotFound';
+import Text from './Text';
 
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Landing} />
-      <Route path="/store/:storeId" component={App} />
-      <Route component={NotFound} />
+      <Route exact path="/" component={App}/>
+      <Route path="/text" component={Text}/>
+      <Route component={NotFound}/>
     </Switch>
   </BrowserRouter>
 );

@@ -1,8 +1,12 @@
+/* jshint ignore: start */
+
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Router from './components/Router';
+import { render } from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+
+render(<Router />, document.getElementById('root'));
 registerServiceWorker();
