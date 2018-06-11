@@ -1,10 +1,15 @@
+/* jshint ignore: start */
+
 import React, { Component } from 'react';
 import Header from './Header';
-import { MarkdownPreview, LiveMarkdownTextarea } from 'react-marked-markdown';
+import SimpleMDEReact from 'react-simplemde-editor';
+import 'simplemde/dist/simplemde.min.css';
 import Popup from 'reactjs-popup';
 import Hello from '../components/Hello';
 import BurgerIcon from '../components/BurgerIcon';
 import Menu from '../components/Menu';
+
+let counter = 1;
 
 
 const styles = {
@@ -17,11 +22,38 @@ const contentStyle = {
   width: '80%',
   border: 'none'
 };
+const editorStyle = {
+  margin: '2em 2em'
+};
+
 class Text extends Component {
-  constructor(props) {
-    super(props)
-    this.createMarkdown = this.createMarkdown.bind(this)
-  }
+
+  state = {
+    textValue1: 'Add your markdown here.',
+  };
+  extraKeys = () => {
+    return {
+      Up: function (cm) {
+        cm.replaceSelection(' surprise. ');
+      },
+      Down: function (cm) {
+        cm.replaceSelection(' surprise again! ');
+      }
+    };
+  };
+
+  handleChange1 = value => {
+    this.setState({
+      textValue1: value
+    });
+  };
+
+
+  handleTextChange = () => {
+    this.setState({
+      textValue1: `Changing text by setting new state. ${counter++}`
+    });
+  };
 
   createMarkdown(event) {
     event.preventDefault();
@@ -45,6 +77,24 @@ class Text extends Component {
           >
             {close => <Menu close={close} />}
           </Popup>
+
+          <button
+            style={{ display: "inline-block", margin: "10px 0" }}
+            onClick={this.handleTextChange}
+          >
+            Click me to update the textValue outside of the editor
+          </button>
+            <SimpleMDEReact
+              editorStyle={editorStyle}
+              label="Markdown Editor"
+              value={this.state.textValue1}
+              onChange={this.handleChange1}
+              options={{
+                autofocus: true,
+                spellChecker: true,
+                // etc.
+              }}
+            />
         </div>
       </div>
     );

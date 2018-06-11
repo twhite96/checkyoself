@@ -3,11 +3,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
-import Text from './components/Text';
 import Popup from 'reactjs-popup';
 import Hello from './components/Hello';
 import BurgerIcon from './components/BurgerIcon';
 import Menu from './components/Menu';
+// import { Redirect } from 'react-router-dom';
 
 
 const styles = {
@@ -21,7 +21,16 @@ const contentStyle = {
   border: 'none'
 };
 class App extends Component {
+  state = {
+    toText: false,
+  }
+
+  handleClickEvent = () => {
+  }
   render() {
+    // if (this.state.toText === true) {
+    //   <Redirect to='/text' />;
+    // }
     return (
       <div>
         <div className="App">
@@ -36,7 +45,7 @@ class App extends Component {
           </p>
         </div>
         <div style={styles}>
-          <Hello name="Create cool burger menu using reactjs-popup" />
+          <Hello name="Welcome to Check Yo Self" />
           <Popup
             modal
             overlayStyle={{ background: "rgba(255,255,255,0.98" }}
