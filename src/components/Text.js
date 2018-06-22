@@ -1,7 +1,6 @@
 /* jshint ignore: start */
 
 import React, { Component } from 'react';
-import Header from './Header';
 import SimpleMDEReact from 'react-simplemde-editor';
 import 'simplemde/dist/simplemde.min.css';
 import Popup from 'reactjs-popup';
@@ -63,11 +62,8 @@ class Text extends Component {
   render() {
     return (
       <div>
-        <div>
-          <Header /> {this.props.children}
-        </div>
         <div style={styles}>
-          <Hello name="Create cool burger menu using reactjs-popup" />
+          <Hello name="Check your markdown here." />
           <Popup
             modal
             overlayStyle={{ background: "rgba(255,255,255,0.98" }}
@@ -84,17 +80,17 @@ class Text extends Component {
           >
             Click me to update the textValue outside of the editor
           </button>
-            <SimpleMDEReact
-              editorStyle={editorStyle}
-              label="Markdown Editor"
-              value={this.state.textValue1}
-              onChange={this.handleChange1}
-              options={{
-                autofocus: true,
-                spellChecker: true,
-                // etc.
-              }}
-            />
+          <SimpleMDEReact
+            editorStyle={editorStyle}
+            label="Markdown Editor"
+            value={this.state.textValue1}
+            onChange={this.handleChange1}
+            options={{
+              autofocus: true,
+              spellChecker: true,
+              // etc.
+            }}
+          />
         </div>
       </div>
     );
@@ -102,3 +98,5 @@ class Text extends Component {
 }
 
 export default Text;
+
+

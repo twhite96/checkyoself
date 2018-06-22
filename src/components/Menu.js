@@ -1,13 +1,24 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-
-export default ({ close }) => (
-  <div className="menu">
+export default({close}) => (
+  <div className='menu'>
     <ul>
-      <li onClick={close} to='/'>Home</li>
-      <li onClick={close} to='/text'>Text</li>
-      {/* <li onClick={close}><Link to='/text'></Link>Text</li>
-      <li onClick={close}><Link to='/text'></Link>Text</li> */}
+      <li>
+        <NavLink onClick={close} activeClassName='current' to='/'>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink onClick={close} to='text'>
+          Text
+        </NavLink>
+      </li>
+      {/* <li>
+        <NavLink onClick={close} to='contact'>
+          Contact
+        </NavLink>
+      </li> */}
     </ul>
   </div>
 );
