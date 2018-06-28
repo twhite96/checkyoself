@@ -5,12 +5,12 @@ script:
   # - npm test
   - CI=false npm run build
 install:
-  - npm install -g snyk
+  # - npm install -g snyk
   - npm install
-  - snyk auth 2b219c46-9899-4ee5-bc48-3dce173ef7cc
-  - snyk protect
+  # - snyk auth 2b219c46-9899-4ee5-bc48-3dce173ef7cc
+  # - snyk protect
 after_success:
-  - snyk monitor
+  # - snyk monitor
   - surge --project ./build --domain https://checkyoself.surge.sh
 branches:
   only:
