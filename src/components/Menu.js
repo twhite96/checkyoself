@@ -10,7 +10,7 @@ export default({close}) => (
         </NavLink>
       </li>
       <li>
-        <NavLink onClick={close} to='text'>
+        <NavLink onClick={close} to='/text'>
           Text
         </NavLink>
       </li>

@@ -1,0 +1,16 @@
+.smde-editor-styles {
+  margin: 0 280px 0 280px;
+}
+
+.highlight {
+  background-color: rgba(6, 215, 217, 0.5);
+  padding: 0 0.3em 0 0.3em;
+}
+
+.change-header {
+  background-color: #06D7D9;
+}
+
+.change-text {
+  color: white;
+}

@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { Hero } from '../components';
 import { Title, SubTitle, Container } from 'reactbulma';
+import '../smde-editor.css';
 
 
 class Header extends Component {
   render() {
     return (
-      <Hero primary>
+      <Hero className="change-header">
         <Hero.Body>
           <Container>
-            <Title>
+            <Title className="change-text">
               Check Yo Self
             </Title>
-            <SubTitle>
+            <SubTitle className="change-text">
               Markdown Grammar Checker for Blog posts
             </SubTitle>
           </Container>

@@ -4,12 +4,11 @@ import React, { Component } from 'react';
 import SimpleMDEReact from 'react-simplemde-editor';
 import 'simplemde/dist/simplemde.min.css';
 import Popup from 'reactjs-popup';
-import Hello from '../components/Hello';
 import BurgerIcon from '../components/BurgerIcon';
 import Menu from '../components/Menu';
+import '../smde-editor.css';
 
-let counter = 1;
-
+let counter = 0;
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -28,7 +27,7 @@ const editorStyle = {
 class Text extends Component {
 
   state = {
-    textValue1: 'Add your markdown here.',
+    textValue1: 'Check your markdown here.',
   };
   extraKeys = () => {
     return {
@@ -54,16 +53,15 @@ class Text extends Component {
     });
   };
 
-  createMarkdown(event) {
-    event.preventDefault();
-    this.props.history.push('/text')
-  }
+  // createMarkdown(event) {
+  //   event.preventDefault();
+  //   this.props.history.push('/text')
+  // }
 
   render() {
     return (
       <div>
         <div style={styles}>
-          <Hello name="Check your markdown here." />
           <Popup
             modal
             overlayStyle={{ background: "rgba(255,255,255,0.98" }}
@@ -81,6 +79,7 @@ class Text extends Component {
             Click me to update the textValue outside of the editor
           </button>
           <SimpleMDEReact
+            className="smde-editor-styles"
             editorStyle={editorStyle}
             label="Markdown Editor"
             value={this.state.textValue1}

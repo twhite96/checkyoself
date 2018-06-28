@@ -6,7 +6,6 @@ import './App.css';
 import { render } from 'react-dom';
 import Header from './components/Header';
 import Popup from 'reactjs-popup';
-import Hello from './components/Hello';
 import BurgerIcon from './components/BurgerIcon';
 import Menu from './components/Menu';
 import Text from './components/Text';
@@ -31,7 +30,8 @@ const contentStyle = {
 
 const Home = () => (
   <div>
-    <h2>Home</h2>
+    <h2>Hey! <span role="img">👋🏾</span></h2>
+    <p>This is Check Yo Self, an app to check the <span class="highlight">grammar and spelling</span> of your <span class="highlight">markdown blog posts</span>.</p>
   </div>
 );
 
@@ -49,7 +49,6 @@ const App = () => (
 
     <Router>
       <div style={styles}>
-        <Hello name="Welcome to Check Yo Self" />
         <Popup
           modal
           overlayStyle={{ background: "rgba(255,255,255,0.98" }}
