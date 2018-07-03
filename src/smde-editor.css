@@ -1,6 +1,11 @@
 .smde-editor-styles {
-  margin: 0 280px 0 280px;
+  margin: 0 20rem 0 20rem;
 }
+
+/* .smde-editor-styles > * {
+  flex: 1 1 250px;
+  margin: 10px;
+} */
 
 .highlight {
   background-color: rgba(6, 215, 217, 0.5);
@@ -14,3 +19,22 @@
 .change-text {
   color: white;
 }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .smde-editor-styles {
+      margin: 0 1.5rem 0 1.5rem;
+    }
+}
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .smde-editor-styles {
+      margin: 0 6rem 0 6rem;
+     }
+}
+
