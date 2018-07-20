@@ -4,6 +4,7 @@ node_js:
 script:
   # - npm test
   - CI=false npm run build
+  - npm run build
 install:
   # - npm install -g snyk
   - npm install
