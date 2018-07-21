@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Hero } from '../components';
 import { Title, SubTitle, Container } from 'reactbulma';
 import '../smde-editor.css';
 
 
-class Header extends Component {
+class Header extends React.Component {
   render() {
     return (
       <Hero className="change-header">

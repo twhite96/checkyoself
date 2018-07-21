@@ -1,14 +1,15 @@
 /* jshint ignore: start */
 
-import React, { Component } from 'react';
+import React from 'react';
 import SimpleMDEReact from 'react-simplemde-editor';
 import 'simplemde/dist/simplemde.min.css';
 import Popup from 'reactjs-popup';
 import BurgerIcon from '../components/BurgerIcon';
 import Menu from '../components/Menu';
 import '../smde-editor.css';
+import WriteGood from './WriteGood';
 
-let counter = 0;
+// let counter = 0;
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -24,7 +25,7 @@ const editorStyle = {
   margin: '2em 2em'
 };
 
-class Text extends Component {
+class Text extends React.Component {
 
   state = {
     textValue1: 'Check your markdown here.',
@@ -46,16 +47,14 @@ class Text extends Component {
     });
   };
 
+  // handleTextChange = () => {
+  //   this.setState({
+  //     textValue1: `Changing text by setting new state. ${counter++}`
+  //   });
+  // };
 
-  handleTextChange = () => {
-    this.setState({
-      textValue1: `Changing text by setting new state. ${counter++}`
-    });
-  };
-
-  // createMarkdown(event) {
-  //   event.preventDefault();
-  //   this.props.history.push('/text')
+  // checkText = text => {
+  //   writeGood(text).map(({ suggestion }) => suggestion);
   // }
 
   render() {
@@ -72,23 +71,23 @@ class Text extends Component {
             {close => <Menu close={close} />}
           </Popup>
 
-          <button
+          {/* <button
             style={{ display: "inline-block", margin: "10px 0" }}
             onClick={this.handleTextChange}
           >
             Click me to update the textValue outside of the editor
-          </button>
+          </button> */}
           <SimpleMDEReact
             className="smde-editor-styles"
             editorStyle={editorStyle}
             label="Markdown Editor"
-            value={this.state.textValue1}
             onChange={this.handleChange1}
             options={{
               autofocus: true,
               spellChecker: true,
               // etc.
             }}
+            value={this.state.textValue1}
           />
         </div>
       </div>
