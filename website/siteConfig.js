@@ -39,8 +39,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Getting Started'},
-    {doc: 'doc3', label: 'Usage'},
-    {doc: 'doc2', label: 'API'},
+    {doc: 'doc2', label: 'Usage'},
+    {doc: 'doc3', label: 'API'},
     {blog: true, label: 'Blog'},
     {href: 'https://github.com/twhite96/checkyoself', label: 'GitHub'},
   ],
