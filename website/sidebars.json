@@ -1,8 +1,8 @@
 {
   "docs": {
     "Introduction": ["doc1"],
-    "API": ["doc2"],
-    "Help": ["doc3"]
+    "Usage": ["doc2"],
+    "API": ["doc3"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
