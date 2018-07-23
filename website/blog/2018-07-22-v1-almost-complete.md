@@ -15,7 +15,7 @@ Here are a couple of photos of the UI:
 
 <figure>
     <img src="https://res.cloudinary.com/twhiteblog/image/upload/v1530187679/Screenshot-2018-06-28_05-06-49_AM_xw8stx.png" />
-    <figcaption style="text-align: center";>
+    <figcaption style="text-align: center;">
        Main Page
     </figcaption>
 </figure><br />
