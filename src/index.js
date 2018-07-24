@@ -14,7 +14,8 @@ import Text from './components/Text';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 // import { Redirect } from 'react-router-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NotFound from './components/NotFound';
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -46,7 +47,6 @@ const App = () => (
     <div>
       <Header />
     </div>
-
     <Router>
       <div style={styles}>
         <Popup
@@ -60,9 +60,12 @@ const App = () => (
         </Popup>
 
         <hr />
-        <Route exact path="/" component={Home} />
-        <Route path="/text" component={Text} />
-        {/* <Route path="/contact" component={Contact} /> */}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/text" component={Text} />
+          <Route component={NotFound} />
+          {/* <Route path="/contact" component={Contact} /> */}
+        </Switch>
       </div>
     </Router>
   </React.Fragment>
