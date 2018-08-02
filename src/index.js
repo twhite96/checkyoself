@@ -5,6 +5,7 @@ import React from 'react';
 import './App.css';
 import { render } from 'react-dom';
 import Header from './components/Header';
+import MessageText from './components/MessageText';
 import Popup from 'reactjs-popup';
 import BurgerIcon from './components/BurgerIcon';
 import Menu from './components/Menu';
@@ -16,6 +17,7 @@ import './index.css';
 // import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './components/NotFound';
+import Footer from './components/Footer';
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -30,10 +32,14 @@ const contentStyle = {
 
 
 const Home = () => (
-  <div>
-    <h2>Hey! <span role="img">👋🏾</span></h2>
-    <p>This is Check Yo Self, an app to check the <span class="highlight">grammar and spelling</span> of your <span class="highlight">markdown blog posts</span>.</p>
-  </div>
+  <React.Fragment>
+    <div>
+      <MessageText />
+    </div>
+    <div>
+      <Footer />
+    </div>
+  </React.Fragment>
 );
 
 // const Contact = () => (

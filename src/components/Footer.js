@@ -2,24 +2,23 @@ import React from 'react';
 import { Hero, Title, SubTitle, Container } from 'reactbulma';
 import '../smde-editor.css';
 
-
-class Header extends React.Component {
+class Footer extends React.Component {
   render() {
     return (
-      <Hero className="change-header">
-        <Hero.Body>
+      <Hero className="change-header push-down">
+        <Hero.Foot>
           <Container>
             <Title className="change-text">
-              Check Yo Self
+              Primary title
             </Title>
             <SubTitle className="change-text">
-              Markdown Grammar Checker for Blog posts
+              Primary subtitle
             </SubTitle>
           </Container>
-        </Hero.Body>
+        </Hero.Foot>
       </Hero>
     );
   }
 }
 
-export default Header;
+export default Footer;

@@ -7,7 +7,8 @@ import Popup from 'reactjs-popup';
 import BurgerIcon from '../components/BurgerIcon';
 import Menu from '../components/Menu';
 import '../smde-editor.css';
-import WriteGood from './WriteGood';
+// import WriteGood from './WriteGood';
+import Footer from '../components/Footer';
 
 // let counter = 0;
 
@@ -59,38 +60,43 @@ class Text extends React.Component {
 
   render() {
     return (
-      <div>
-        <div style={styles}>
-          <Popup
-            modal
-            overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-            contentStyle={contentStyle}
-            closeOnDocumentClick={false}
-            trigger={open => <BurgerIcon open={open} />}
-          >
-            {close => <Menu close={close} />}
-          </Popup>
+      <React.Fragment>
+        <div>
+          <div style={styles}>
+            <Popup
+              modal
+              overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+              contentStyle={contentStyle}
+              closeOnDocumentClick={false}
+              trigger={open => <BurgerIcon open={open} />}
+            >
+              {close => <Menu close={close} />}
+            </Popup>
 
-          {/* <button
+            {/* <button
             style={{ display: "inline-block", margin: "10px 0" }}
             onClick={this.handleTextChange}
           >
             Click me to update the textValue outside of the editor
           </button> */}
-          <SimpleMDEReact
-            className="smde-editor-styles"
-            editorStyle={editorStyle}
-            label="Markdown Editor"
-            onChange={this.handleChange1}
-            options={{
-              autofocus: true,
-              spellChecker: true,
-              // etc.
-            }}
-            value={this.state.textValue1}
-          />
+            <SimpleMDEReact
+              className="smde-editor-styles"
+              editorStyle={editorStyle}
+              label="Markdown Editor"
+              onChange={this.handleChange1}
+              options={{
+                autofocus: true,
+                spellChecker: true,
+                // etc.
+              }}
+              value={this.state.textValue1}
+            />
+          </div>
         </div>
-      </div>
+        <div>
+          <Footer />
+        </div>
+      </React.Fragment>
     );
   }
 }
