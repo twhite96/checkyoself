@@ -9,19 +9,24 @@
 [![GitHub commits](https://img.shields.io/github/commits-since/twhite96/checkyoself/0.0.2.svg?maxAge=2592000)](https://github.com/twhite96/checkyoself)
 [![](https://img.shields.io/badge/buy%20me-a%20coffee-%2306D7D9.svg)](https://www.paypal.me/codenewb)
 
-Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on [Material Design Lite](https://getmdl.io/index.html) for the UI because I like colorful things.
+Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on React Bulma for the UI because it is lightweight and flexible, like [Bulma](https://bulma.io).
+
+React Bulma: 
+[demo](https://kulakowka.github.io/react-bulma/)
+[github](https://github.com/kulakowka/react-bulma)
 
 ## Docs
 
-Check out [the docs](https://twhite96.github.io/chys-docs/).
+Check out [the docs](https://checkyoself-docs.netlify.com/).
 
-## Tutorial
+## TODO
 
-For how to use the app, check out 
+- [ ] Finish `write-good` component
+- [ ] Write tutorial on how to use the app
 
 ## Release History
 
-* 0.0.2
+* 0.7.0
     * Work in progress
 
 ## Meta
