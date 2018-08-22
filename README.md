@@ -6,7 +6,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/twhite96/checkyoself.svg)](https://greenkeeper.io/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/TiffanyW_412.svg?style=social&label=Follow)](https://twitter.com/TiffanyW_412)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![GitHub commits](https://img.shields.io/github/commits-since/twhite96/checkyoself/0.0.2.svg?maxAge=2592000)](https://github.com/twhite96/checkyoself)
+[![GitHub commits](https://img.shields.io/github/commits-since/twhite96/checkyoself/0.7.0svg?maxAge=2592000)](https://github.com/twhite96/checkyoself)
 [![](https://img.shields.io/badge/buy%20me-a%20coffee-%2306D7D9.svg)](https://www.paypal.me/codenewb)
 
 Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on React Bulma for the UI because it is lightweight and flexible, like [Bulma](https://bulma.io).
