@@ -13,6 +13,7 @@ Frustrated by Grammarly and Hemingway apps' inability to process markdown blog p
 
 React Bulma: 
 [demo](https://kulakowka.github.io/react-bulma/)
+
 [github](https://github.com/kulakowka/react-bulma)
 
 ## Docs
