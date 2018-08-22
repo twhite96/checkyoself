@@ -12,6 +12,7 @@
 Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on React Bulma for the UI because it is lightweight and flexible, like [Bulma](https://bulma.io).
 
 React Bulma: 
+
 [demo](https://kulakowka.github.io/react-bulma/)
 
 [github](https://github.com/kulakowka/react-bulma)
