@@ -1,3 +1,5 @@
+/*jshint ignore: start */
+
 import React from 'react';
 import { Hero, Title, SubTitle, Container } from 'reactbulma';
 import '../smde-editor.css';
@@ -10,7 +12,7 @@ class Header extends React.Component {
         <Hero.Body>
           <Container>
             <Title className="change-text">
-              Check Yo Self
+             Check Yo Self
             </Title>
             <SubTitle className="change-text">
               Markdown Grammar Checker for Blog posts

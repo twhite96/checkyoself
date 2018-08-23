@@ -102,5 +102,3 @@ class Text extends React.Component {
 }
 
 export default Text;
-
-
