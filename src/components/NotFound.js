@@ -3,21 +3,17 @@
 import React from 'react';
 
 
-class NotFound extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-      </div>
-    );
-  }
+import broken from '../images/imbroken.GIF'
+
+function NotFound(props) {
+  return (
+    <div className="page-container">
+      <h1 className="title">404</h1>
+      <img src={broken} alt="broken..." />
+      <p>Well...this is embarrassing. Whatever you were looking for isn't here.</p>
+    </div>
+  )
 }
+
 
 export default NotFound;

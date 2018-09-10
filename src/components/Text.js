@@ -1,5 +1,4 @@
 /* jshint ignore: start */
-
 import React from 'react';
 import SimpleMDEReact from 'react-simplemde-editor';
 import 'simplemde/dist/simplemde.min.css';
@@ -27,10 +26,13 @@ const editorStyle = {
 };
 
 class Text extends React.Component {
-
-  state = {
-    textValue1: 'Check your markdown here.',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      textValue: 'Check your markdown here.',
+      text: {}
+    };
+  }
   extraKeys = () => {
     return {
       Up: function (cm) {
@@ -44,15 +46,15 @@ class Text extends React.Component {
 
   handleChange1 = value => {
     this.setState({
-      textValue1: value
+      textValue: value
     });
   };
 
-  // handleTextChange = () => {
-  //   this.setState({
-  //     textValue1: `Changing text by setting new state. ${counter++}`
-  //   });
-  // };
+  handleTextChange = markup => {
+    this.setState({
+      text: markup
+    });
+  };
 
   // checkText = text => {
   //   writeGood(text).map(({ suggestion }) => suggestion);
@@ -65,7 +67,7 @@ class Text extends React.Component {
           <div style={styles}>
             <Popup
               modal
-              overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+              overlayStyle={{ background: 'rgba(255,255,255,0.98)' }}
               contentStyle={contentStyle}
               closeOnDocumentClick={false}
               trigger={open => <BurgerIcon open={open} />}
@@ -86,10 +88,11 @@ class Text extends React.Component {
               onChange={this.handleChange1}
               options={{
                 autofocus: true,
-                spellChecker: true,
+                spellChecker: true
                 // etc.
               }}
-              value={this.state.textValue1}
+              value={this.state.textValue}
+              markup={this.state.text}
             />
           </div>
         </div>

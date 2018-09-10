@@ -1,19 +1,21 @@
 {
   "name": "checkyoself",
-  "version": "0.1.0",
+  "version": "0.7.0",
   "private": true,
   "dependencies": {
     "ajv": "^6.5.0",
     "bulma": "^0.7.1",
+    "firebase": "^5.4.2",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "prop-types": "^15.6.1",
+    "re-base": "^4.0.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-marked-markdown": "^1.4.6",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.1",
+    "react-scripts": "^1.1.5",
     "react-simplemde-editor": "^3.6.15",
     "react-transition-group": "^2.3.1",
     "reactbulma": "^3.0.4",
@@ -30,10 +32,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "cypress": "^3.0.1",
+    "cypress": "^3.1.0",
     "eslint": "^5.0.0",
     "eslint-plugin-react": "^7.9.1",
-    "react-testing-library": "^4.0.0",
-    "surge": "^0.20.1"
+    "react-testing-library": "^4.0.0"
   }
 }

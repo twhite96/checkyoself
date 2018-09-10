@@ -6,12 +6,12 @@ export default({close}) => (
     <ul>
       <li>
         <NavLink onClick={close} activeClassName='current' to='/'>
-          Home
+          Home 🏠
         </NavLink>
       </li>
       <li>
         <NavLink onClick={close} to='/text'>
-          Text
+          Write ✍️
         </NavLink>
       </li>
       {/* <li>
