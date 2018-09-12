@@ -12,7 +12,6 @@
     "re-base": "^4.0.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-helmet": "^5.2.0",
     "react-marked-markdown": "^1.4.6",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^1.1.5",
@@ -22,7 +21,6 @@
     "reactjs-popup": "^1.1.1",
     "snyk": "^1.82.1",
     "spell-checker": "0.0.26",
-    "tui-editor": "^1.2.2",
     "write-good": "^0.13.0"
   },
   "scripts": {
@@ -33,6 +31,7 @@
   },
   "devDependencies": {
     "cypress": "^3.1.0",
+    "dotenv": "^6.0.0",
     "eslint": "^5.0.0",
     "eslint-plugin-react": "^7.9.1",
     "react-testing-library": "^4.0.0"

@@ -12,7 +12,7 @@ function NotFound(props) {
       <img src={broken} alt="broken..." />
       <p>Well...this is embarrassing. Whatever you were looking for isn't here.</p>
     </div>
-  )
+  );
 }
 
 

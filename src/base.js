@@ -1,10 +1,11 @@
 import Rebase from 're-base';
 import firebase from 'firebase';
+const require('dotenv').config();
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyD6RvaQ565u24lNMyIBaAEIo9AGJcSc_a0",
-  authDomain: "checkyoself-565d3.firebaseapp.com",
-  databaseURL: "https://checkyoself-565d3.firebaseio.com",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE
 });
 
 const base = Rebase.createClass(firebaseApp.database());
