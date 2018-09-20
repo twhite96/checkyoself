@@ -1,6 +1,5 @@
 /* jshint ignore: start */
 
-
 import React from 'react';
 import './App.css';
 import { render } from 'react-dom';
@@ -18,6 +17,7 @@ import './index.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
+import Privacy from './components/Privacy';
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -29,7 +29,6 @@ const contentStyle = {
   width: '80%',
   border: 'none'
 };
-
 
 const Home = () => (
   <React.Fragment>
@@ -57,7 +56,7 @@ const App = () => (
       <div style={styles}>
         <Popup
           modal
-          overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+          overlayStyle={{ background: 'rgba(255,255,255,0.98' }}
           contentStyle={contentStyle}
           closeOnDocumentClick={false}
           trigger={open => <BurgerIcon open={open} />}
@@ -69,14 +68,14 @@ const App = () => (
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/text" component={Text} />
+          <Route path="/privacy" component={Privacy} />
           <Route component={NotFound} />
-          {/* <Route path="/contact" component={Contact} /> */}
         </Switch>
       </div>
     </Router>
   </React.Fragment>
 );
 
-render(<App/>, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
 
 registerServiceWorker();

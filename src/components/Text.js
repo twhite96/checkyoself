@@ -6,10 +6,8 @@ import Popup from 'reactjs-popup';
 import BurgerIcon from '../components/BurgerIcon';
 import Menu from '../components/Menu';
 import '../smde-editor.css';
-// import WriteGood from './WriteGood';
+import writeGood from 'write-good';
 import Footer from '../components/Footer';
-
-// let counter = 0;
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -25,6 +23,10 @@ const editorStyle = {
   margin: '2em 2em'
 };
 
+const WriteGood = ({ text }) => (
+  <div>{writeGood(text).map(({ suggestion }) => suggestion)}</div>
+);
+
 class Text extends React.Component {
   constructor(props) {
     super(props);
@@ -35,10 +37,10 @@ class Text extends React.Component {
   }
   extraKeys = () => {
     return {
-      Up: function (cm) {
+      Up: function(cm) {
         cm.replaceSelection(' surprise. ');
       },
-      Down: function (cm) {
+      Down: function(cm) {
         cm.replaceSelection(' surprise again! ');
       }
     };
@@ -55,10 +57,6 @@ class Text extends React.Component {
       text: markup
     });
   };
-
-  // checkText = text => {
-  //   writeGood(text).map(({ suggestion }) => suggestion);
-  // }
 
   render() {
     return (
@@ -84,6 +82,7 @@ class Text extends React.Component {
             <SimpleMDEReact
               className="smde-editor-styles"
               editorStyle={editorStyle}
+              // suggested={this.editorState}
               label="Markdown Editor"
               onChange={this.handleChange1}
               options={{
@@ -94,6 +93,7 @@ class Text extends React.Component {
               value={this.state.textValue}
               markup={this.state.text}
             />
+            <WriteGood />
           </div>
         </div>
         <div>

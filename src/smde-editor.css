@@ -1,17 +1,17 @@
 .smde-editor-styles {
-  margin: 0 4vw 0 4vh;
+  margin: 2vw 20vw;
 }
 
-/* .fit {
-  padding: 0 20rem 0 20rem;
-} */
+.fit {
+  padding: 0 26vw 0 26vw;
+}
 /* .smde-editor-styles > * {
   flex: 1 1 250px;
   margin: 10px;
 } */
 .push-down {
   /* margin-top: 39.3rem; */
-  margin-top: 46.8vh;
+  margin-top: 49.4vh;
   padding: 3.9rem;
 }
 .body-styles {
@@ -21,6 +21,17 @@
   font-size: 2vmin;
 }
 
+.privacy-styles {
+  background-color: #ffffff;
+}
+
+.content {
+  text-align: start;
+}
+.center-justified {
+  height: 100vh; /* Magic here */
+  width: 100vw;
+}
 .pad-bottom {
   padding-bottom: 6rem;
 }
@@ -46,6 +57,10 @@
 
 .change-text {
   color: white;
+}
+
+.change-danger {
+  background-color: rgba(174, 27, 117, 0.2);
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
