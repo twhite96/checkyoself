@@ -28,12 +28,9 @@
 .content {
   text-align: start;
 }
-.center-justified {
-  height: 100vh; /* Magic here */
-  width: 100vw;
-}
+
 .pad-bottom {
-  padding-bottom: 6rem;
+  padding-bottom: 6vmin;
 }
 
 .header-styles {

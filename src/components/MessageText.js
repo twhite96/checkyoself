@@ -28,23 +28,27 @@ class MessageText extends React.Component {
         <div className="fit">
           <Message className="change-danger body-styles change-text">
             <Message.Body>
-              <p className="content">
+              <div className="content">
                 FAQ:
                 <ol>
                   <li>
                     Is my data on your server somewhere?<br />
-                    In an upcoming release, I am going to be using Firebase to sync and store your texts so that in case you come back and want to have your data persisted, it will be there. See the Privacy Policy for more.
+                    In an upcoming release, I am going to be using Firebase to
+                    sync and store your texts so that in case you come back and
+                    want to have your data persisted, it will be there. See the
+                    Privacy Policy for more.
                   </li>
                   <li>
                     Does this cost anything?<br />
-                    Nope. It is free. If you like it you can buy me a <a href="https://www.paypal.me/codenewb/5">coffee</a>.
+                    Nope. It is free. If you like it you can buy me a{' '}
+                    <a href="https://www.paypal.me/codenewb/5">coffee</a>.
                   </li>
                   <li>
                     How can I delete no longer needed texts?<br />
                     Selecting and hitting backspace!
                   </li>
                 </ol>
-              </p>
+              </div>
             </Message.Body>
           </Message>
         </div>

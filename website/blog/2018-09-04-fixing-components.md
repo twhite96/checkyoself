@@ -15,7 +15,7 @@ I would like to have the text I need to check for grammar and spelling errors to
 
 I created `state` in the `constructor` method:
 
-```js
+```jsx
 class Text extends React.Component {
   constructor(props) {
     super(props);
@@ -30,7 +30,7 @@ So far, text is just an empty object to store the text.
 
 I am able to handle the text change and set its state with the `handleTextChange` method where I assign a prop of `markup`:
 
-```js
+```jsx
   handleTextChange = markup => {
     this.setState({
       text: markup

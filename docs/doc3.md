@@ -6,4 +6,4 @@ sidebar_label: Using Check Yo Self in Your Own Apps
 
 ## Is There an API?
 
-Trying to decide if I want to write an additional component so users can use in their own React app. Not sure yet.
+There is no API currently. [Suggest something](https://github.com/twhite96/checkyoself/issues) and contribute if you have time.
