@@ -2615,7 +2615,7 @@ dom-storage@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/dom-storage/-/dom-storage-2.1.0.tgz#00fb868bc9201357ea243c7bcfd3304c1e34ea39"
 
-dom-testing-library@^3.1.0:
+dom-testing-library@^3.8.1:
   version "3.8.4"
   resolved "https://registry.yarnpkg.com/dom-testing-library/-/dom-testing-library-3.8.4.tgz#4b0aa5f305225801aa31803b1f42fc405097235d"
   dependencies:
@@ -7158,11 +7158,11 @@ react-simplemde-editor@^3.6.15:
   dependencies:
     simplemde "^1.11.2"
 
-react-testing-library@^4.0.0:
-  version "4.1.9"
-  resolved "https://registry.yarnpkg.com/react-testing-library/-/react-testing-library-4.1.9.tgz#a96fe41fd2a6205d6a2029604f46df18b9cda2d2"
+react-testing-library@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/react-testing-library/-/react-testing-library-5.2.0.tgz#d7af9b0e6d1b653287d8c06cd0eab9e6d5d645ba"
   dependencies:
-    dom-testing-library "^3.1.0"
+    dom-testing-library "^3.8.1"
     wait-for-expect "^1.0.0"
 
 react-transition-group@^2.3.1:
