@@ -14,7 +14,7 @@
     "react-dom": "^16.4.2",
     "react-marked-markdown": "^1.4.6",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^2.0.4",
     "react-simplemde-editor": "^3.6.15",
     "react-transition-group": "^2.3.1",
     "reactbulma": "^3.0.4",
