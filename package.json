@@ -21,7 +21,7 @@
     "reactjs-popup": "^1.1.1",
     "snyk": "^1.103.1",
     "spell-checker": "0.0.26",
-    "write-good": "^0.13.0"
+    "write-good": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
