@@ -64,7 +64,7 @@ I went spelunking into documentation and library code, as well as asking around 
 
 a. I just need a functional component that I can add to the `SimpleMDE` component in the `Text.js` component and,
 
-b. Getting the suggestions to show up in a popover is going to be a bit difficult, so a dev in Slack is going to help me get the suggestions to show up *under* the text editor. I am not sure how this is going to work and it definitely not ideal but it is good enough for v.1.
+b. Getting the suggestions to show up in a popover is going to be a bit difficult, so a dev in Slack is going to help me get the suggestions to show up *under* the text editor. I am not sure how this is going to work and it's definitely not ideal but it is good enough for v.1.
 
 ```jsx
 const WriteGood = ({ text }) => (

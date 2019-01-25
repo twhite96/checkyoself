@@ -71,3 +71,9 @@ body {
   color: #06D7D9;
 
 }
+
+.suggestion {
+  background-color:#ffeee6;
+  border: 1px solid #ffddcc;
+  color: 666;
+}

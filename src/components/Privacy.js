@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Popup from 'reactjs-popup';
 import BurgerIcon from './BurgerIcon';
 import Menu from './Menu';
-import { Content } from 'reactbulma';
+// import { Content } from 'reactbulma';
 import '../smde-editor.css';
 
 const styles = {

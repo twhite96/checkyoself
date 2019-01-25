@@ -1,63 +1,18 @@
-/* jshint ignore: start */
 import React from 'react';
-import SimpleMDEReact from 'react-simplemde-editor';
-import 'simplemde/dist/simplemde.min.css';
 import Popup from 'reactjs-popup';
 import BurgerIcon from '../components/BurgerIcon';
 import Menu from '../components/Menu';
-import '../smde-editor.css';
-import writeGood from 'write-good';
+import { Editor, EditorState, RichUtils } from 'md-draft-js';
+import {WriteGood, suggestionStrategy} from '../helpers/write_good';
 import Footer from '../components/Footer';
-
-const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
-  marginTop: '40px'
-};
-const contentStyle = {
-  background: 'rgba(255,255,255,0)',
-  width: '80%',
-  border: 'none'
-};
-const editorStyle = {
-  margin: '2em 2em'
-};
-
-const WriteGood = ({ text }) => (
-  <div>{writeGood(text).map(({ suggestion }) => suggestion)}</div>
-);
 
 class Text extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      textValue: 'Check your markdown here.',
-      text: {}
-    };
+    this.state = { editorState: EditorState.createWithContent('Write your markdown here.') };
+    this.onChange = (editorState) => this.setState({ editorState });
+    this.handleKeyCommand = this.handleKeyCommand.bind(this);
   }
-  extraKeys = () => {
-    return {
-      Up: function(cm) {
-        cm.replaceSelection(' surprise. ');
-      },
-      Down: function(cm) {
-        cm.replaceSelection(' surprise again! ');
-      }
-    };
-  };
-
-  handleChange1 = value => {
-    this.setState({
-      textValue: value
-    });
-  };
-
-  handleTextChange = markup => {
-    this.setState({
-      text: markup
-    });
-  };
-
   render() {
     return (
       <React.Fragment>
@@ -72,28 +27,13 @@ class Text extends React.Component {
             >
               {close => <Menu close={close} />}
             </Popup>
-
-            {/* <button
-            style={{ display: "inline-block", margin: "10px 0" }}
-            onClick={this.handleTextChange}
-          >
-            Click me to update the textValue outside of the editor
-          </button> */}
-            <SimpleMDEReact
-              className="smde-editor-styles"
-              editorStyle={editorStyle}
-              // suggested={this.editorState}
-              label="Markdown Editor"
-              onChange={this.handleChange1}
-              options={{
-                autofocus: true,
-                spellChecker: true
-                // etc.
-              }}
-              value={this.state.textValue}
-              markup={this.state.text}
+            <Editor
+              autoFocus
+              className="editor-textarea"
+              editorState={this.state.editorState}
+              onKeyCommand={this.handleKeyCommand}
+              onChange={this.onChange}
             />
-            <WriteGood />
           </div>
         </div>
         <div>

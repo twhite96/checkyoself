@@ -3,9 +3,9 @@ node_js:
   - "stable"
 script:
   # - npm test
-  - CI=false 
+  - CI=false
   - npm run build
-  
+
 install:
   # - npm install -g snyk
   - npm install
@@ -13,7 +13,7 @@ install:
   # - snyk protect
 after_success:
   # - snyk monitor
-  - surge --project ./build --domain https://checkyoself.surge.sh
+  - surge --project
 branches:
   only:
   - master

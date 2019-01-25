@@ -6,8 +6,11 @@
   "prettier.requireConfig": false,
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.trailingComma": "none",
   "files.autoSave": "off",
   "prettier.bracketSpacing": true,
-  "prettier.jsxBracketSameLine": true,
-  "editor.formatOnSave": false
+  "prettier.jsxBracketSameLine": true
+  }
 }
