@@ -21,9 +21,9 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Check Yo Self' /* title for your website */,
+  title: 'Check Yo Self Docs' /* title for your website */,
   tagline: 'An app to check the grammar and spelling of your markdown blog posts.',
-  url: 'https://checkyoself.netlify.com' /* your website url */,
+  url: 'https://checkyoself-docs.netlify.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
