@@ -32,7 +32,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
+    "babel-eslint": "^10.0.1",
     "cypress": "^3.1.4",
     "react-testing-library": "^4.0.0"
   },
