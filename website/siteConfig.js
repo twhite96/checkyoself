@@ -77,12 +77,12 @@ const siteConfig = {
     new Date().getFullYear() +
     ' Tiffany White',
 
-  // highlight: {
+  highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-  //   theme: 'atelier-dune-dark',
-  // },
+    theme: 'atelier-dune-dark'
+  },
 
-  usePrism: ['jsx', 'js'],
+  usePrism: ['jsx'],
 
   // Add custom scripts here that would be placed in <script> tags
   scripts: ['https://buttons.github.io/buttons.js'],
