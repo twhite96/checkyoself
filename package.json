@@ -8,7 +8,7 @@
     "bulma": "^0.7.2",
     "draft-js": "^0.9.1",
     "draft-js-simpledecorator": "^1.0.1",
-    "firebase": "^5.8.1",
+    "firebase": "^5.8.3",
     "lodash": "^4.17.11",
     "md-draft-js": "^3.2.3",
     "moment": "^2.24.0",
