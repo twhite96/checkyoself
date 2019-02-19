@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "ajv": "6.5.3",
-    "antd": "^2.5.1",
+    "antd": "^3.13.4",
     "bulma": "^0.7.2",
     "draft-js": "^0.9.1",
     "draft-js-simpledecorator": "^1.0.1",
