@@ -3,7 +3,7 @@
   "version": "0.7.0",
   "private": true,
   "dependencies": {
-    "ajv": "6.5.3",
+    "ajv": "6.9.2",
     "antd": "^2.5.1",
     "bulma": "^0.7.2",
     "draft-js": "^0.9.1",
