@@ -48,6 +48,8 @@ class Text extends React.Component {
   />
   ```
 
+  [![Edit checkyoself](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/7m427yrqxj?fontsize=14)
+
   This implementation is the correct one, but I will need to get it working with a popover, etc.
 
   ## Next stop
