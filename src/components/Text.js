@@ -8,6 +8,8 @@ import Menu from '../components/Menu';
 import '../smde-editor.css';
 import writeGood from 'write-good';
 import Footer from '../components/Footer';
+import '../antd.css';
+import { Popover } from '../antd.css';
 
 const styles = {
   fontFamily: 'sans-serif',
@@ -23,9 +25,9 @@ const editorStyle = {
   margin: '2em 2em'
 };
 
-const WriteGood = ({ text }) => (
-  <div>{writeGood(text).map(({ suggestion }) => suggestion)}</div>
-);
+// const WriteGood = ({ text }) => (
+//   <div>{writeGood(text).map(({ suggestion }) => suggestion)}</div>
+// );
 
 class Text extends React.Component {
   constructor(props) {
@@ -34,6 +36,7 @@ class Text extends React.Component {
       textValue: 'Check your markdown here.',
       text: {}
     };
+    this.handleWriteGood = this.handleWriteGood.bind(this);
   }
   extraKeys = () => {
     return {
@@ -57,6 +60,10 @@ class Text extends React.Component {
       text: markup
     });
   };
+
+  handleWriteGood = text => {
+    writeGood(text).map(({ suggestion }) => suggestion);
+  }
 
   render() {
     return (
@@ -92,14 +99,27 @@ class Text extends React.Component {
               }}
               value={this.state.textValue}
               markup={this.state.text}
+              text={writeGood}
             />
-            <WriteGood />
           </div>
         </div>
         <div>
           <Footer />
         </div>
       </React.Fragment>
+    );
+  }
+}
+
+class SuggestionSpan extends React.Component {
+  render() {
+    let {suggestion, offsetKey, children} = this.props;
+    return (
+      <Popover content={suggestion.reason}>
+        <span data-offset-key={offsetKey} className="suggestion">
+          {children}
+        </span>
+      </Popover>
     );
   }
 }

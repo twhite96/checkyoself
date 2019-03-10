@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import writeGood from 'write-good';
+// import writeGood from 'write-good';
 import { Popover } from '../antd.css';
 
 export class SuggestionSpan extends Component {
@@ -15,9 +15,9 @@ export class SuggestionSpan extends Component {
   }
 }
 
-export function suggestionStrategy(contentBlock, callback) {
-  let suggestions = writeGood(contentBlock.get("text")) || [];
-  suggestions.forEach(suggestion => {
-    callback(suggestion.index, suggestion.index + suggestion.offset, {suggestion: suggestion});
-  });
-}
+// export function suggestionStrategy(contentBlock, callback) {
+//   let suggestions = writeGood(contentBlock.get("text")) || [];
+//   suggestions.forEach(suggestion => {
+//     callback(suggestion.index, suggestion.index + suggestion.offset, {suggestion: suggestion});
+//   });
+// }

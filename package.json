@@ -6,11 +6,8 @@
     "ajv": "6.5.3",
     "antd": "^2.5.1",
     "bulma": "^0.7.2",
-    "draft-js": "^0.9.1",
-    "draft-js-simpledecorator": "^1.0.1",
     "firebase": "^5.8.1",
     "lodash": "^4.17.11",
-    "md-draft-js": "^3.2.3",
     "moment": "^2.24.0",
     "prop-types": "^15.6.2",
     "re-base": "^4.0.0",
@@ -35,11 +32,5 @@
     "babel-eslint": "^9.0.0",
     "cypress": "^3.1.4",
     "react-testing-library": "^4.0.0"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }
