@@ -79,7 +79,7 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'atelier-dune-dark'
+    theme: 'arta'
   },
 
   usePrism: ['jsx', 'js'],
