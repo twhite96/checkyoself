@@ -3894,28 +3894,12 @@ dotenv@6.0.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.0.0.tgz#24e37c041741c5f4b25324958ebbc34bca965935"
   integrity sha512-FlWbnhgjtwD+uNLUGHbMykMOYQaTivdHEmYwAKFjn6GKe/CqY0fNae93ZHTd20snh9ZLr8mTzIL9m0APQ1pjQg==
 
-draft-js-simpledecorator@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/draft-js-simpledecorator/-/draft-js-simpledecorator-1.0.2.tgz#4962e7d0899736d731d11e0ae31aca660eadb29e"
-  integrity sha1-SWLn0ImXNtcx0R4K4xrKZg6tsp4=
-  dependencies:
-    immutable "*"
-
 draft-js@^0.10.0, draft-js@~0.10.0:
   version "0.10.5"
   resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.5.tgz#bfa9beb018fe0533dbb08d6675c371a6b08fa742"
   integrity sha512-LE6jSCV9nkPhfVX2ggcRLA4FKs6zWq9ceuO/88BpXdNCS7mjRTgs0NsV6piUCJX9YxMsB9An33wnkMmU2sD2Zg==
   dependencies:
     fbjs "^0.8.15"
-    immutable "~3.7.4"
-    object-assign "^4.1.0"
-
-draft-js@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.9.1.tgz#940a51a0ad1fede0411676b6404f4050495f54f9"
-  integrity sha1-lApRoK0f7eBBFna2QE9AUElfVPk=
-  dependencies:
-    fbjs "^0.8.3"
     immutable "~3.7.4"
     object-assign "^4.1.0"
 
@@ -4626,7 +4610,7 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-fbjs@^0.8.15, fbjs@^0.8.3, fbjs@^0.8.9:
+fbjs@^0.8.15, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -5711,7 +5695,7 @@ immer@1.7.2:
   resolved "https://registry.yarnpkg.com/immer/-/immer-1.7.2.tgz#a51e9723c50b27e132f6566facbec1c85fc69547"
   integrity sha512-4Urocwu9+XLDJw4Tc6ZCg7APVjjLInCFvO4TwGsAYV5zT6YYSor14dsZR0+0tHlDIN92cFUOq+i7fC00G5vTxA==
 
-immutable@*, immutable@^3.7.4:
+immutable@^3.7.4:
   version "3.8.2"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
   integrity sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
@@ -6129,11 +6113,6 @@ is-installed-globally@0.1.0, is-installed-globally@^0.1.0:
   dependencies:
     global-dirs "^0.1.0"
     is-path-inside "^1.0.0"
-
-is-key-combo@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/is-key-combo/-/is-key-combo-1.0.3.tgz#89cc2810210f0fe11ec52403289b4c3c062d7372"
-  integrity sha1-icwoECEPD+EexSQDKJtMPAYtc3I=
 
 is-npm@^1.0.0:
   version "1.0.0"
@@ -7426,15 +7405,6 @@ math-random@^1.0.1:
   resolved "https://registry.yarnpkg.com/math-random/-/math-random-1.0.4.tgz#5dd6943c938548267016d4e34f057583080c514c"
   integrity sha512-rUxjysqif/BZQH2yhd5Aaq7vXMSx9NdEsQcyA07uEzIvxgI7zIr33gGsh+RU0/XjmQpCW7RsVof1vlkvQVCK5A==
 
-md-draft-js@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/md-draft-js/-/md-draft-js-3.2.3.tgz#7f329b8b1d70c4429b0e3f7ef58011acc0d7fa8a"
-  integrity sha512-xou9PJ36jslWhJOp0NbomMHeXt6g34PEWAJz74a+EqIsgg/mS8AXTqzq+Xea1ESHy7GwJf4TdvJkWtqYZ66cDg==
-  dependencies:
-    is-key-combo "^1.0.3"
-    parse-link-input "^1.1.1"
-    prop-types "^15.6.2"
-
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -8406,11 +8376,6 @@ parse-json@^4.0.0:
   dependencies:
     error-ex "^1.3.1"
     json-parse-better-errors "^1.0.1"
-
-parse-link-input@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/parse-link-input/-/parse-link-input-1.1.1.tgz#7aab0709792238846ba871344a072891ec2d0117"
-  integrity sha1-eqsHCXkiOIRrqHE0SgcokewtARc=
 
 parse-passwd@^1.0.0:
   version "1.0.0"
@@ -10147,10 +10112,10 @@ reactbulma@^3.0.4:
     react "^16.0.0"
     react-dom "^16.0.0"
 
-reactjs-popup@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/reactjs-popup/-/reactjs-popup-1.3.2.tgz#7f7861443fc5edfb0184da1d01838dbd5db690cd"
-  integrity sha512-BwfaOkKpLHNHxSmiMcX/yc61twJvjGbJ/SBE+fYovJudFlaZDYXGPSp+3dTCE0UoNsEqF8oc/pNkYlGgmrnsrw==
+reactjs-popup@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/reactjs-popup/-/reactjs-popup-1.4.1.tgz#d5ec829a0f94d4480144f8c52f71cc73b7941083"
+  integrity sha512-Q1yLwo4X+on6k/45usKuOdmIkJr5TnL+8LUNtFvNLNmGLEdOnZn1uR57iq36E8RrMJc+d+tSGdgo8uaJKkxNNA==
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
