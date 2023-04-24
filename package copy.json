@@ -1,8 +1,17 @@
 {
-  "name": "checkyoself",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "reactjs-vite-tailwindcss-boilerplate",
+  "description": "This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "João Paulo Moraes",
+    "email": "joaopaulomoraes@outlook.com",
+    "url": "https://github.com/joaopaulomoraes"
+  },
+  "bugs": {
+    "url": "https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate/issues",
+    "email": "joaopaulomoraes@outlook.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -11,15 +20,6 @@
     "test:ui": "vitest --ui",
     "lint": "eslint src --max-warnings=0",
     "typecheck": "tsc --project tsconfig.json --noEmit"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/twhite96/checkyoself.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/twhite96/checkyoself/issues"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -55,6 +55,5 @@
     "vite": "^4.3.1",
     "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.30.1"
-  },
-  "homepage": "https://github.com/twhite96/checkyoself#readme"
+  }
 }
