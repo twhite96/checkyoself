@@ -3,8 +3,6 @@
 import React from 'react';
 
 import broken from '../images/imbroken.GIF';
-import Footer from './Footer';
-import '../smde-editor.css';
 
 function NotFound(props) {
   return (
@@ -14,7 +12,6 @@ function NotFound(props) {
       <p>
         Well...this is embarrassing. Whatever you were looking for isn't here.
       </p>
-      <Footer/>
     </div>
   );
 }

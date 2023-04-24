@@ -14,7 +14,7 @@ import Text from './components/Text';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 // import { Redirect } from 'react-router-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Privacy from './components/Privacy';
@@ -31,14 +31,14 @@ const contentStyle = {
 };
 
 const Home = () => (
-  <React.Fragment>
+  <div>
     <div>
       <MessageText />
     </div>
     <div>
       <Footer />
     </div>
-  </React.Fragment>
+  </div>
 );
 
 // const Contact = () => (
@@ -48,32 +48,31 @@ const Home = () => (
 // );
 
 const App = () => (
-  <React.Fragment>
-    <div>
-      <Header />
-    </div>
+  <div>
     <Router>
-      <div style={styles}>
-        <Popup
-          modal
-          overlayStyle={{ background: 'rgba(255,255,255,0.98' }}
-          contentStyle={contentStyle}
-          closeOnDocumentClick={false}
-          trigger={open => <BurgerIcon open={open} />}
-        >
-          {close => <Menu close={close} />}
-        </Popup>
+      <div>
+        <Link to='/'>
+          <Header />
+        </Link>
+        <div style={styles}>
+          <Popup
+            modal
+            overlayStyle={{ background: 'rgba(255,255,255,0.98' }}
+            contentStyle={contentStyle}
+            closeOnDocumentClick={false}
+            trigger={(open) => <BurgerIcon open={open} />}>
+            {(close) => <Menu close={close} />}
+          </Popup>
 
-        <hr />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/text" component={Text} />
-          <Route path="/privacy" component={Privacy} />
-          <Route component={NotFound} />
-        </Switch>
+          <hr />
+            <Route exact path='/' component={Home} />
+            <Route path='/text' component={Text} />
+            <Route path='/privacy' component={Privacy} />
+            <Route path='/404'component={NotFound} />
+        </div>
       </div>
     </Router>
-  </React.Fragment>
+  </div>
 );
 
 render(<App />, document.getElementById('root'));

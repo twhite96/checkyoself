@@ -2,40 +2,71 @@
 
 >  A site to check the grammar of your markdown blog posts/texts.
 
-[![Shields](https://img.shields.io/badge/Status-WIP-%2306d7d9)](https://img.shields.io/badge/Status-WIP-%2306d7d9)
+[![Shields](https://img.shields.io/badge/Status-WIP-%2306d7d9?style=for-the-badge&logo=appveyor)](https://img.shields.io/badge/Status-WIP-%2306d7d9)
 
-[![Travis](https://img.shields.io/travis/twhite96/checkyoself.svg)](https://travis-ci.org/twhite96/checkyoself)
-[![Greenkeeper badge](https://badges.greenkeeper.io/twhite96/checkyoself.svg)](https://greenkeeper.io/)
+[![Travis](https://img.shields.io/travis/twhite96/checkyoself.svg?style=for-the-badge&logo=appveyor)](https://travis-ci.org/twhite96/checkyoself)
+[![MIT Licence](https://img.shields.io/github/license/twhite96/checkyoself?style=for-the-badge)](https://opensource.org/licenses/mit-license.php)
+[![GitHub commits](https://img.shields.io/github/commits-since/twhite96/checkyoself/0.7?style=for-the-badge)](https://github.com/twhite96/checkyoself/releases/tag/0.7)
 [![Twitter Follow](https://img.shields.io/twitter/follow/tiffanywhitedev.svg?style=social&label=Follow)](https://twitter.com/tiffanywhitedev)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![GitHub commits](https://img.shields.io/github/commits-since/twhite96/checkyoself/0.7.svg?maxAge=2592000)](https://github.com/twhite96/checkyoself/releases/tag/0.7)
-<!-- [![](https://img.shields.io/badge/buy%20me-a%20coffee-%2306D7D9.svg)](https://www.paypal.me/codenewb) -->
 
-Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on React Bulma for the UI because it is lightweight and flexible, like [Bulma](https://bulma.io).
 
-React Bulma:
+[Live Demo](https://checkyoself.tiffstuff.dev)
 
-[demo](https://kulakowka.github.io/react-bulma/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/twhite96/checkyoself)
 
-[github](https://github.com/kulakowka/react-bulma)
+---
 
-## Docs
+How to use:
 
-Check out [the docs](https://checkyoself-docs.tiffstuff.dev/docs/doc1.html) and keep up with the status of the app on the [app's blog](https://checkyoself-docs.tiffstuff.dev/blog/).
+1. 🌀 Clone the repo at `https://github.com/twhite96/checkyoself.git`
+2. 🏃 Run: `npm i` to install dependencies.
+3. 🎊 Have fun with it.
 
-## TODO
+---
 
-- [ ] Finish `write-good` component
-- [ ] Write tutorial on how to use the app
+## 💪🏽 Motivation for this app
+Frustrated by Grammarly and Hemingway apps' inability to process markdown blog posts, I decided to make my own site to process markdown blog posts or other texts. I settled on React Bulma for the UI because it is lightweight and flexible, like Bulma.
 
-## Release History
+## 🥞 Stack
+I am currently using React-Bulma, create-react-app, write-good, and SimpleMDE markdown editor. Eventually I'd like to use Firebase for data persistence.
 
-* 0.7.0
-  * Work in progress
+## 👊🏽 Wins
+The components are written for the most part; there are some breaking changes with SimpleMDE editor and so I am not upgrading to the latest version.
+
+I've also become more cognizant of React patterns and concepts.
+
+For instance, 
+
+## 😐 Difficulties
+
+Getting the styling was easy. At first, getting the navigation together with the `react-transition-group` library was difficult as I didn't have much experience with React when I started this project for instance, this hamburger button:
+
+```jsx
+
+export default ({ open, ...props }) => (
+  <div className={open ? "burger-menu open" : "burger-menu"} {...props}>
+    <div className="bar1" key="b1" />
+    <div className="bar2" key="b2" />
+    <div className="bar3" key="b3" />
+  </div>
+);
+```
+
+I didn't know what it was doing. What was this line: `{open ? "burger-menu open" : "burger-menu"}` and what did it do?
+
+
+## 🚶‍♂️Next steps
+
+
+## ⚡ Refactor ⚡
+
+
+###  📘 Further reading
+
 
 ## Meta
 
-Tiffany White – [tiffanywhitedev](https://twitter.com/tiffanywhitedev)  email: <feedback@tiffanyrwhite.com>
+Tiffany White – [tiffanywhitedev](https://twitter.com/tiffanywhitedev) email: <feedback@tiffanyrwhite.com>
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 

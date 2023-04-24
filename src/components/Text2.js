@@ -1,16 +1,14 @@
-/* jshint ignore: start */
-import React from 'react';
+import React from 'react'
 import SimpleMDEReact from 'react-simplemde-editor';
 import '../simplemde.min.css';
 import Popup from 'reactjs-popup';
-import { writeGoodComp } from '../helpers/suggestion'
-import tippy from 'tippy.js'
+import tippy from 'tippy.js';
+import writeGood from 'write-good';
 import { renderToString } from 'react-dom/server';
 import BurgerIcon from './BurgerIcon';
 import Menu from './Menu';
 import Footer from './Footer';
 import '../antd.css';
-
 
 
 const styles = {
@@ -26,32 +24,29 @@ const contentStyle = {
 const editorStyle = {
   margin: '2em 2em'
 };
-
-
-class Text extends React.Component {
+class Text2 extends React.Component {
   constructor(props) {
     super(props);
     this.inputRef = React.createRef();
   }
+  defaultProps = {
+    delay: 1000,
+    value: ""
+  };
 
-  // extraKeys = () => {
-  //   return {
-  //     Up: function (cm) {
-  //       cm.replaceSelection(' surprise. ');
-  //     },
-  //     Down: function (cm) {
-  //       cm.replaceSelection(' surprise again! ');
-  //     }
-  //   };
-  // };
+
+  state = {
+    value: localStorage.getItem(`smde_${this.props.id}`) || this.props.value
+  };
+
 
   handleChange1 = value => {
     const editor = this.inputRef.current
     const { editorEl } = editor;
     const errors = editorEl.querySelectorAll('.cm-spell-error');
-    if(errors.length) {
+    if (errors.length) {
       Array.from(errors).forEach(err => {
-        const suggestions = writeGoodComp(err.textContent);
+        const suggestions = writeGood(err.textContent);
         console.log(suggestions, err.textContent);
         new tippy(err, {
           content: 'Fix this wrong thing',
@@ -61,9 +56,8 @@ class Text extends React.Component {
     }
     console.log(errors);
   };
-
-
   render() {
+    const { options, delay, id, ...rest } = this.props;
     return (
       <div>
         <div>
@@ -77,27 +71,18 @@ class Text extends React.Component {
             >
               {close => <Menu close={close} />}
             </Popup>
-
-
             <SimpleMDEReact
-              className="smde-editor-styles"
-              editorStyle={editorStyle}
-              // suggested={this.editorState}
-              label="Markdown Editor"
-              onChange={this.handleChange1}
+              {...rest}
+              id={id}
+              value={this.state.value}
               options={{
-                autofocus: false,
-                spellChecker: true
-                // etc.
+                autosave: {
+                  enabled: true,
+                  uniqueId: id,
+                  delay
+                },
+                ...options
               }}
-              render={writeGoodComp}
-              ref={this.inputRef}
-              // The text prop where I passed in the
-              // writeGoodSuggestions function
-              // Now that I think about it I am
-              // not calling this right. I need to add parens at the end of the render prop
-              // This would ultimately just render when a user enters grammatically
-              // incorrect text
             />
           </div>
         </div>
@@ -109,5 +94,4 @@ class Text extends React.Component {
   }
 }
 
-export default Text;
-
+export default Text2;

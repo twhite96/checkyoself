@@ -40,8 +40,10 @@
 }
 
 .highlight {
-  background-color: rgba(6, 215, 217, 0.5);
+  background: rgba(6, 215, 217, 0.5);
   padding: 0 0.3em 0 0.3em;
+  transition: background 0.3s;
+  transform: skew(20deg); /* SKEW */
 }
 
 .change-header {
@@ -58,6 +60,16 @@
 
 .change-danger {
   background-color: rgba(174, 27, 117, 0.2);
+}
+
+.suggestion {
+  background-color: #efd1e3;
+  border: 1px solid #ffddcc;
+  color: 666;
+}
+
+.shrink {
+  margin-right: -30em;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {

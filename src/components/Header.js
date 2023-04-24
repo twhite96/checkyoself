@@ -3,6 +3,7 @@
 import React from 'react';
 import { Hero, Title, SubTitle, Container } from 'reactbulma';
 import '../smde-editor.css';
+import { Link } from 'react-router-dom';
 
 
 class Header extends React.Component {
