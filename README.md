@@ -3,12 +3,9 @@
 >  A site to check the grammar of your markdown blog posts/texts.
 
 [![Shields](https://img.shields.io/badge/Status-WIP-%2306d7d9?style=for-the-badge&logo=appveyor)](https://img.shields.io/badge/Status-WIP-%2306d7d9)
-
-[![Travis](https://img.shields.io/travis/twhite96/checkyoself.svg?style=for-the-badge&logo=appveyor)](https://travis-ci.org/twhite96/checkyoself)
 [![MIT Licence](https://img.shields.io/github/license/twhite96/checkyoself?style=for-the-badge)](https://opensource.org/licenses/mit-license.php)
 [![GitHub commits](https://img.shields.io/github/commits-since/twhite96/checkyoself/0.7?style=for-the-badge)](https://github.com/twhite96/checkyoself/releases/tag/0.7)
-[![Twitter Follow](https://img.shields.io/twitter/follow/tiffanywhitedev.svg?style=social&label=Follow)](https://twitter.com/tiffanywhitedev)
-
+![Mastodon Follow](https://img.shields.io/mastodon/follow/109368045337420181?color=%23278bff&domain=https%3A%2F%2Fhachyderm.io&logo=Mastodon&style=for-the-badge)
 
 [Live Demo](https://checkyoself.tiffstuff.dev)
 
